@@ -53,8 +53,8 @@ export default function Challenge() {
   };
 
   return (
-    <div className="p-6 flex flex-col items-center space-y-4">
-      <h1 className="text-3xl font-bold">UHT Trait Challenge</h1>
+    <div className="p-4 flex flex-col items-center space-y-4 max-w-md mx-auto">
+      <h1 className="text-2xl font-bold">UHT Trait Challenge</h1>
 
       {!challengeEntity && (
         <button onClick={startChallenge} className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
@@ -63,12 +63,11 @@ export default function Challenge() {
       )}
 
       {challengeEntity && (
-        <div className="w-full max-w-2xl flex flex-col items-center">
-          <img src={challengeEntity.image} alt={challengeEntity.name} className="w-48 h-48 object-contain mb-4" />
-          <h2 className="text-2xl font-semibold mb-2">{challengeEntity.name}</h2>
-          <p className="text-sm mb-4 italic">Select the traits you think apply:</p>
+        <div className="w-full flex flex-col items-center">
+          <img src={challengeEntity.image} alt={challengeEntity.name} className="w-32 h-32 object-contain mb-4 rounded shadow" />
+          <h2 className="text-xl font-semibold mb-2">{challengeEntity.name}</h2>
+          <p className="text-xs mb-4 italic">Select the traits you think apply:</p>
 
-          {/* Traits grouped into collapsible layers */}
           {layerNames.map((layer) => (
             <div key={layer} className="w-full mb-2">
               <button
@@ -81,13 +80,14 @@ export default function Challenge() {
               {openLayers[layer] && (
                 <div className="border-l-4 border-blue-400 pl-4 mt-2 space-y-2">
                   {traits.filter((trait, index) => getLayer(index) === layer).map((trait) => (
-                    <label key={trait.id} className="flex items-center space-x-2">
+                    <label key={trait.id} className="flex items-center space-x-2 w-full">
                       <input
                         type="checkbox"
                         checked={selectedTraits.includes(trait.name)}
                         onChange={() => toggleTrait(trait.name)}
+                        className="h-4 w-4"
                       />
-                      <span className="text-sm">{trait.name}</span>
+                      <span className="text-sm w-48 truncate">{trait.name}</span>
                     </label>
                   ))}
                 </div>
@@ -101,7 +101,7 @@ export default function Challenge() {
 
           {result && (
             <div className="text-left w-full mt-6">
-              <h3 className="text-xl font-semibold mb-2">Results:</h3>
+              <h3 className="text-lg font-semibold mb-2">Results:</h3>
               <p><strong>Correct:</strong> {result.correctMatches.length}</p>
               <p><strong>Missed:</strong> {result.missedTraits.length}</p>
               <p><strong>Extras:</strong> {result.extraTraits.length}</p>
