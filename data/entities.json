@@ -13,7 +13,7 @@
       "Visible",
       "Widely known"
     ],
-    "image": "/assets/rock.png",
+    "image": "assets/rock.png",
     "description": "A natural, solid aggregate of minerals — stable, perceptible, passive, and widely recognized across cultures."
   },
   {
@@ -41,7 +41,7 @@
       "Context-sensitive",
       "Widely known"
     ],
-    "image": "/assets/bridge.png",
+    "image": "assets/bridge.png",
     "description": "A man-made structure that enables passage across obstacles like rivers or valleys — essential, visible, regulated, and socially constructed."
   },
   {
@@ -66,7 +66,7 @@
       "Context-sensitive",
       "Widely known"
     ],
-    "image": "/assets/oak_tree.png",
+    "image": "assets/oak_tree.png",
     "description": "A biological, self-sustaining organism that grows, changes with seasons, and plays a critical role in ecosystems — material, perceptible, and universally known."
   },
   {
@@ -90,7 +90,7 @@
       "Context-sensitive",
       "Widely known"
     ],
-    "image": "/assets/candle.png",
+    "image": "assets/candle.png",
     "description": "A man-made object that emits light and heat, transforming itself over time — a symbolic and visible source of illumination across cultures."
   },
   {
@@ -122,7 +122,7 @@
       "Context-sensitive",
       "Widely known"
     ],
-    "image": "/assets/clock.png",
+    "image": "assets/clock.png",
     "description": "A mechanical or electronic device that measures and displays the passage of time, guiding human activities through standardized, communicative signals."
   },
   {
@@ -154,7 +154,7 @@
       "Context-sensitive",
       "Widely known"
     ],
-    "image": "/assets/book.png",
+    "image": "assets/book.png",
     "description": "A tangible medium that stores and communicates symbolic information, structured to guide human understanding across cultures and contexts."
   }
   
