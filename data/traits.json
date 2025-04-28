@@ -1,0 +1,37 @@
+[
+  {"index": 1, "layer": "Physical", "name": "Physical object"},
+  {"index": 2, "layer": "Physical", "name": "Man-made / synthetic"},
+  {"index": 3, "layer": "Physical", "name": "Biological or biologically-inspired"},
+  {"index": 4, "layer": "Physical", "name": "Fixed/static"},
+  {"index": 5, "layer": "Physical", "name": "Structural"},
+  {"index": 6, "layer": "Physical", "name": "Perceptible"},
+  {"index": 7, "layer": "Physical", "name": "Material form"},
+  {"index": 8, "layer": "Physical", "name": "Passive"},
+
+  {"index": 9, "layer": "Functional", "name": "Purposeful / intentional"},
+  {"index": 10, "layer": "Functional", "name": "Emits output / produces effect"},
+  {"index": 11, "layer": "Functional", "name": "Processes or regulates logic/signals"},
+  {"index": 12, "layer": "Functional", "name": "Transforms or modifies internal state"},
+  {"index": 13, "layer": "Functional", "name": "Interacts with humans directly"},
+  {"index": 14, "layer": "Functional", "name": "Part of a larger system"},
+  {"index": 15, "layer": "Functional", "name": "Autonomous in function"},
+  {"index": 16, "layer": "Functional", "name": "System-critical"},
+
+  {"index": 17, "layer": "Abstract", "name": "Symbolic / representational"},
+  {"index": 18, "layer": "Abstract", "name": "Communicative"},
+  {"index": 19, "layer": "Abstract", "name": "Logical / rule-based"},
+  {"index": 20, "layer": "Abstract", "name": "Hierarchical / modular"},
+  {"index": 21, "layer": "Abstract", "name": "Behavior-guiding"},
+  {"index": 22, "layer": "Abstract", "name": "Self-referential / meta-conceptual"},
+  {"index": 23, "layer": "Abstract", "name": "Temporal"},
+  {"index": 24, "layer": "Abstract", "name": "Contextual abstraction"},
+
+  {"index": 25, "layer": "Social", "name": "Socially / culturally constructed"},
+  {"index": 26, "layer": "Social", "name": "Defined by a group/system"},
+  {"index": 27, "layer": "Social", "name": "Linked to identity or role"},
+  {"index": 28, "layer": "Social", "name": "Regulated / governed"},
+  {"index": 29, "layer": "Social", "name": "Teachable / transmissible"},
+  {"index": 30, "layer": "Social", "name": "Visible"},
+  {"index": 31, "layer": "Social", "name": "Context-sensitive"},
+  {"index": 32, "layer": "Social", "name": "Widely known"}
+]

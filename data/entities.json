@@ -1,0 +1,166 @@
+[
+{
+    "id": 1,
+    "name": "Rock",
+    "hex": "9F000011",
+    "traits": [
+      "Physical object",
+      "Fixed/static",
+      "Structural",
+      "Perceptible",
+      "Material form",
+      "Passive",
+      "Visible",
+      "Widely known"
+    ],
+    "image": "/assets/rock.png",
+    "description": "A natural, solid aggregate of minerals — stable, perceptible, passive, and widely recognized across cultures."
+  },
+  {
+    "id": 2,
+    "name": "Bridge",
+    "hex": "DF9B10DF",
+    "traits": [
+      "Physical object",
+      "Man-made / synthetic",
+      "Fixed/static",
+      "Structural",
+      "Perceptible",
+      "Material form",
+      "Passive",
+      "Purposeful / intentional",
+      "Interacts with humans directly",
+      "Part of a larger system",
+      "System-critical",
+      "Hierarchical / modular",
+      "Socially / culturally constructed",
+      "Defined by a group/system",
+      "Regulated / governed",
+      "Teachable / transmissible",
+      "Visible",
+      "Context-sensitive",
+      "Widely known"
+    ],
+    "image": "/assets/bridge.png",
+    "description": "A man-made structure that enables passage across obstacles like rivers or valleys — essential, visible, regulated, and socially constructed."
+  },
+  {
+    "id": 3,
+    "name": "Oak Tree",
+    "hex": "BF762007",
+    "traits": [
+      "Physical object",
+      "Biological or biologically-inspired",
+      "Fixed/static",
+      "Structural",
+      "Perceptible",
+      "Material form",
+      "Passive",
+      "Emits output / produces effect",
+      "Transforms or modifies internal state",
+      "Part of a larger system",
+      "Autonomous in function",
+      "Hierarchical / modular",
+      "Temporal",
+      "Visible",
+      "Context-sensitive",
+      "Widely known"
+    ],
+    "image": "/assets/oak_tree.png",
+    "description": "A biological, self-sustaining organism that grows, changes with seasons, and plays a critical role in ecosystems — material, perceptible, and universally known."
+  },
+  {
+    "id": 4,
+    "name": "Candle",
+    "hex": "F6F58807",
+    "traits": [
+      "Physical object",
+      "Man-made / synthetic",
+      "Fixed/static",
+      "Perceptible",
+      "Material form",
+      "Purposeful / intentional",
+      "Emits output / produces effect",
+      "Transforms or modifies internal state",
+      "Interacts with humans directly",
+      "Autonomous in function",
+      "Symbolic / representational",
+      "Temporal",
+      "Visible",
+      "Context-sensitive",
+      "Widely known"
+    ],
+    "image": "/assets/candle.png",
+    "description": "A man-made object that emits light and heat, transforming itself over time — a symbolic and visible source of illumination across cultures."
+  },
+  {
+    "id": 5,
+    "name": "Clock",
+    "hex": "F6FD7CFF",
+    "traits": [
+      "Physical object",
+      "Man-made / synthetic",
+      "Fixed/static",
+      "Perceptible",
+      "Material form",
+      "Purposeful / intentional",
+      "Emits output / produces effect",
+      "Processes or regulates logic/signals",
+      "Transforms or modifies internal state",
+      "Interacts with humans directly",
+      "Autonomous in function",
+      "Communicative",
+      "Logical / rule-based",
+      "Hierarchical / modular",
+      "Behavior-guiding",
+      "Temporal",
+      "Socially / culturally constructed",
+      "Defined by a group/system",
+      "Regulated / governed",
+      "Teachable / transmissible",
+      "Visible",
+      "Context-sensitive",
+      "Widely known"
+    ],
+    "image": "/assets/clock.png",
+    "description": "A mechanical or electronic device that measures and displays the passage of time, guiding human activities through standardized, communicative signals."
+  },
+  {
+    "id": 6,
+    "name": "Book",
+    "hex": "F7A4FFFF",
+    "traits": [
+      "Physical object",
+      "Man-made / synthetic",
+      "Fixed/static",
+      "Perceptible",
+      "Material form",
+      "Passive",
+      "Purposeful / intentional",
+      "Interacts with humans directly",
+      "Part of a larger system",
+      "Symbolic / representational",
+      "Communicative",
+      "Logical / rule-based",
+      "Hierarchical / modular",
+      "Behavior-guiding",
+      "Temporal",
+      "Contextual abstraction",
+      "Socially / culturally constructed",
+      "Defined by a group/system",
+      "Regulated / governed",
+      "Teachable / transmissible",
+      "Visible",
+      "Context-sensitive",
+      "Widely known"
+    ],
+    "image": "/assets/book.png",
+    "description": "A tangible medium that stores and communicates symbolic information, structured to guide human understanding across cultures and contexts."
+  }
+  
+    
+  
+  
+
+
+]
