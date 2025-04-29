@@ -112,13 +112,11 @@ export default function Challenge() {
 
       {challengeEntity && (
         <div className="w-full flex flex-col items-center">
-          <div className="w-64 h-64 overflow-hidden flex items-center justify-center mb-2 rounded shadow">
+          <div className="max-h-64 overflow-hidden flex items-center justify-center mb-2 rounded shadow">
             <img
               src={challengeEntity.image}
               alt={challengeEntity.name}
-              width="256"
-              height="256"
-              className="w-64 h-64 object-contain"
+              className="max-h-64 w-auto object-contain"
               loading="lazy"
             />
           </div>
@@ -156,8 +154,6 @@ export default function Challenge() {
                       <img
                         src={trait.icon}
                         alt={trait.name}
-                        width="20"
-                        height="20"
                         className="object-contain"
                       />
                       <input
