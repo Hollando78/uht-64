@@ -65,13 +65,17 @@ export default function Challenge() {
       {challengeEntity && (
         <div className="w-full flex flex-col items-center">
           <div className="w-16 h-16 overflow-hidden flex items-center justify-center mb-4 rounded shadow">
+          <div className="w-32 h-32 overflow-hidden flex items-center justify-center mb-4 rounded shadow">
   <img
     src={challengeEntity.image}
     alt={challengeEntity.name}
-    className="max-w-full max-h-full object-contain"
+    width="128"
+    height="128"
+    className="w-32 h-32 object-contain"
     loading="lazy"
   />
 </div>
+
 
           <h2 className="text-xl font-semibold mb-2 text-center">{challengeEntity.name}</h2>
           <p className="text-xs mb-4 italic text-center">Select the traits you think apply:</p>
