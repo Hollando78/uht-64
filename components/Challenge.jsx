@@ -156,7 +156,7 @@ export default function Challenge() {
                       <img
                         src={trait.icon}
                         alt={trait.name}
-                        className="w-6 h-6"
+                        className="w-4 h-4 object-contain"
                       />
                       <input
                         type="checkbox"
