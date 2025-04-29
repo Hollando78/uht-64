@@ -83,12 +83,16 @@ export default function Challenge() {
       const traitInfo = traits.find(t => t.name === traitName);
       const entityFeedback = challengeEntity?.feedback?.[traitName];
       return (
-        <div key={traitName} className="mb-2 ml-2">
-          <div className="font-bold">{traitName}</div>
+        <div key={traitName} style={{ marginBottom: '0.5rem', marginLeft: '0.5rem' }}>
+          <div style={{ fontWeight: 'bold' }}>{traitName}</div>
           {entityFeedback ? (
-            <div className="text-xs text-gray-600 ml-4 italic">"{entityFeedback}"</div>
+            <div style={{ fontSize: '0.75rem', color: '#4B5563', marginLeft: '1rem', fontStyle: 'italic' }}>
+              "{entityFeedback}"
+            </div>
           ) : traitInfo?.feedback ? (
-            <div className="text-xs text-gray-600 ml-4 italic">"{traitInfo.feedback}"</div>
+            <div style={{ fontSize: '0.75rem', color: '#4B5563', marginLeft: '1rem', fontStyle: 'italic' }}>
+              "{traitInfo.feedback}"
+            </div>
           ) : null}
         </div>
       );
@@ -101,68 +105,68 @@ export default function Challenge() {
   };
 
   return (
-    <div className="p-4 flex flex-col items-center space-y-4 max-w-md mx-auto">
-      <h1 className="text-2xl font-bold">UHT Trait Challenge</h1>
+    <div style={{ padding: '1rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', maxWidth: '28rem', margin: 'auto' }}>
+      <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>UHT Trait Challenge</h1>
 
       {!challengeEntity && (
-        <button onClick={startChallenge} className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <button onClick={startChallenge} style={{ backgroundColor: '#2563EB', color: 'white', fontWeight: 'bold', padding: '0.5rem 1rem', borderRadius: '0.5rem' }}>
           Start New Challenge
         </button>
       )}
 
       {challengeEntity && (
-        <div className="w-full flex flex-col items-center">
-          <div className="max-h-64 overflow-hidden flex items-center justify-center mb-2 rounded shadow">
+        <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <div style={{ maxHeight: '16rem', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.5rem', borderRadius: '0.5rem', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' }}>
             <img
               src={challengeEntity.image}
               alt={challengeEntity.name}
-              className="max-h-64 w-auto object-contain"
+              style={{ maxHeight: '16rem', width: 'auto', objectFit: 'contain' }}
               loading="lazy"
             />
           </div>
-          <p className="text-xs text-gray-600">Traits required: {challengeEntity.traits.length}</p>
-          <p className="text-xs text-gray-600">Selected Traits: {selectedTraits.length}</p>
-          <p className="text-xs text-gray-600">Current Hex: {generateHexCode()}</p>
+          <p style={{ fontSize: '0.75rem', color: '#4B5563' }}>Traits required: {challengeEntity.traits.length}</p>
+          <p style={{ fontSize: '0.75rem', color: '#4B5563' }}>Selected Traits: {selectedTraits.length}</p>
+          <p style={{ fontSize: '0.75rem', color: '#4B5563' }}>Current Hex: {generateHexCode()}</p>
 
-          <h2 className="text-xl font-semibold mb-2 text-center">{challengeEntity.name}</h2>
-          <p className="text-xs mb-4 italic text-center">Select the traits you think apply:</p>
+          <h2 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '0.5rem', textAlign: 'center' }}>{challengeEntity.name}</h2>
+          <p style={{ fontSize: '0.75rem', fontStyle: 'italic', textAlign: 'center', marginBottom: '1rem' }}>Select the traits you think apply:</p>
 
           <button
             onClick={() => !hintUsed && (setShowHints(true), setHintUsed(true))}
-            className={`mb-4 ${hintUsed ? 'bg-gray-400' : 'bg-yellow-500 hover:bg-yellow-600'} text-white font-bold py-2 px-4 rounded`}
+            style={{ marginBottom: '1rem', backgroundColor: hintUsed ? '#9CA3AF' : '#F59E0B', color: 'white', fontWeight: 'bold', padding: '0.5rem 1rem', borderRadius: '0.5rem' }}
             disabled={hintUsed}
           >
             {hintUsed ? 'Hint Used' : 'Show Hints'}
           </button>
 
           {layerNames.map((layer) => (
-            <div key={layer} className="w-full mb-2">
+            <div key={layer} style={{ width: '100%', marginBottom: '0.5rem' }}>
               <button
                 onClick={() => toggleLayer(layer)}
-                className="w-full bg-gray-200 hover:bg-gray-300 text-left font-bold py-2 px-4 rounded"
+                style={{ width: '100%', backgroundColor: '#E5E7EB', textAlign: 'left', fontWeight: 'bold', padding: '0.5rem 1rem', borderRadius: '0.5rem' }}
               >
                 {openLayers[layer] ? '▼' : '▶'} {layer} Layer {showHints && `(Needs ${countTraitsInLayer(layer)})`}
               </button>
 
               {openLayers[layer] && (
-                <div className="border-l-4 border-blue-400 pl-4 mt-2 max-h-48 overflow-y-auto space-y-1">
+                <div style={{ borderLeft: '4px solid #60A5FA', paddingLeft: '1rem', marginTop: '0.5rem', maxHeight: '12rem', overflowY: 'auto' }}>
                   {traits.filter((trait, index) => getLayer(index) === layer).map((trait) => (
                     <div
                       key={trait.id}
-                      className={`flex items-center space-x-2 p-1 rounded ${selectedTraits.includes(trait.name) ? 'bg-green-200' : ''}`}
+                      style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.25rem', borderRadius: '0.25rem', backgroundColor: selectedTraits.includes(trait.name) ? '#BBF7D0' : 'transparent' }}
                     >
                       <img
                         src={trait.icon}
                         alt={trait.name}
-                        className="object-contain"
+                        style={{ height: '20px', width: 'auto', objectFit: 'contain' }}
                       />
                       <input
                         type="checkbox"
                         checked={selectedTraits.includes(trait.name)}
                         onChange={() => toggleTrait(trait.name)}
-                        className="h-4 w-4"
+                        style={{ height: '16px', width: '16px' }}
                       />
-                      <span className="text-sm truncate">{trait.name}</span>
+                      <span style={{ fontSize: '0.875rem', overflow: 'hidden', textOverflow: 'ellipsis' }}>{trait.name}</span>
                     </div>
                   ))}
                 </div>
@@ -170,22 +174,22 @@ export default function Challenge() {
             </div>
           ))}
 
-          <button onClick={checkAnswer} className="mt-6 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+          <button onClick={checkAnswer} style={{ marginTop: '1.5rem', backgroundColor: '#16A34A', color: 'white', fontWeight: 'bold', padding: '0.5rem 1rem', borderRadius: '0.5rem' }}>
             Submit Answer
           </button>
 
           {result && (
-            <div className="text-left w-full mt-6">
-              <h3 className="text-lg font-semibold mb-2">Results:</h3>
-              <p className="mb-2"><strong>Score: {result.score}%</strong></p>
-              <p className="mt-2"><strong>Correct:</strong></p>
-              <div className="text-green-700 ml-4 space-y-2">{formatTraitsList(result.correctMatches)}</div>
-              <p className="mt-4"><strong>Missed:</strong></p>
-              <div className="text-red-700 ml-4 space-y-2">{formatTraitsList(result.missedTraits)}</div>
-              <p className="mt-4"><strong>Extras:</strong></p>
-              <div className="text-yellow-700 ml-4 space-y-2">{formatTraitsList(result.extraTraits)}</div>
+            <div style={{ textAlign: 'left', width: '100%', marginTop: '1.5rem' }}>
+              <h3 style={{ fontSize: '1.125rem', fontWeight: '600', marginBottom: '0.5rem' }}>Results:</h3>
+              <p style={{ marginBottom: '0.5rem' }}><strong>Score: {result.score}%</strong></p>
+              <p style={{ marginTop: '0.5rem' }}><strong>Correct:</strong></p>
+              <div style={{ color: '#15803D', marginLeft: '1rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>{formatTraitsList(result.correctMatches)}</div>
+              <p style={{ marginTop: '1rem' }}><strong>Missed:</strong></p>
+              <div style={{ color: '#DC2626', marginLeft: '1rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>{formatTraitsList(result.missedTraits)}</div>
+              <p style={{ marginTop: '1rem' }}><strong>Extras:</strong></p>
+              <div style={{ color: '#CA8A04', marginLeft: '1rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>{formatTraitsList(result.extraTraits)}</div>
 
-              <button onClick={startChallenge} className="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              <button onClick={startChallenge} style={{ marginTop: '1.5rem', backgroundColor: '#2563EB', color: 'white', fontWeight: 'bold', padding: '0.5rem 1rem', borderRadius: '0.5rem' }}>
                 Try Another
               </button>
             </div>
