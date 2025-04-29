@@ -153,6 +153,11 @@ export default function Challenge() {
                       key={trait.id}
                       className={`flex items-center space-x-2 p-1 rounded ${selectedTraits.includes(trait.name) ? 'bg-green-200' : ''}`}
                     >
+                      <img
+                        src={trait.icon}
+                        alt={trait.name}
+                        className="w-6 h-6"
+                      />
                       <input
                         type="checkbox"
                         checked={selectedTraits.includes(trait.name)}

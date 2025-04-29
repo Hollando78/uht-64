@@ -1,37 +1,197 @@
 [
-  { "id": 1, "name": "Physical object", "feedback": "Represents something with tangible physical presence." },
-  { "id": 2, "name": "Man-made / synthetic", "feedback": "Created or manufactured by humans rather than occurring naturally." },
-  { "id": 3, "name": "Biological or biologically-inspired", "feedback": "Derived from or modeled after biological systems or organisms." },
-  { "id": 4, "name": "Fixed/static", "feedback": "Maintains a consistent, unchanging form or position." },
-  { "id": 5, "name": "Structural", "feedback": "Serves primarily as a supportive or load-bearing component." },
-  { "id": 6, "name": "Perceptible", "feedback": "Can be detected or sensed directly by human perception." },
-  { "id": 7, "name": "Material form", "feedback": "Exists as matter rather than being purely conceptual." },
-  { "id": 8, "name": "Passive", "feedback": "Does not actively initiate changes or outputs on its own." },
+  {
+    "id": 1,
+    "name": "Physical object",
+    "feedback": "Represents something with tangible physical presence.",
+    "icon": "assets/traits/physical_object.png"
+  },
+  {
+    "id": 2,
+    "name": "Man-made / synthetic",
+    "feedback": "Created or manufactured by humans rather than occurring naturally.",
+    "icon": "assets/traits/man_made_synthetic.png"
+  },
+  {
+    "id": 3,
+    "name": "Biological or biologically-inspired",
+    "feedback": "Derived from or modeled after biological systems or organisms.",
+    "icon": "assets/traits/biological_biologically_inspired.png"
+  },
+  {
+    "id": 4,
+    "name": "Fixed/static",
+    "feedback": "Maintains a consistent, unchanging form or position.",
+    "icon": "assets/traits/fixed_static.png"
+  },
+  {
+    "id": 5,
+    "name": "Structural",
+    "feedback": "Serves primarily as a supportive or load-bearing component.",
+    "icon": "assets/traits/structural.png"
+  },
+  {
+    "id": 6,
+    "name": "Perceptible",
+    "feedback": "Can be detected or sensed directly by human perception.",
+    "icon": "assets/traits/perceptible.png"
+  },
+  {
+    "id": 7,
+    "name": "Material form",
+    "feedback": "Exists as matter rather than being purely conceptual.",
+    "icon": "assets/traits/material_form.png"
+  },
+  {
+    "id": 8,
+    "name": "Passive",
+    "feedback": "Does not actively initiate changes or outputs on its own.",
+    "icon": "assets/traits/passive.png"
+  },
 
-  { "id": 9, "name": "Purposeful / intentional", "feedback": "Designed with a specific function or goal in mind." },
-  { "id": 10, "name": "Emits output / produces effect", "feedback": "Generates a change, output, or impact on its environment." },
-  { "id": 11, "name": "Processes or regulates logic/signals", "feedback": "Handles, controls, or transforms information or signals." },
-  { "id": 12, "name": "Transforms or modifies internal state", "feedback": "Undergoes internal changes in condition, status, or form." },
-  { "id": 13, "name": "Interacts with humans directly", "feedback": "Designed for direct engagement, use, or response by humans." },
-  { "id": 14, "name": "Part of a larger system", "feedback": "Functions as a component within a broader interconnected system." },
-  { "id": 15, "name": "Autonomous in function", "feedback": "Operates independently without needing continuous external control." },
-  { "id": 16, "name": "System-critical", "feedback": "Essential to the operation or success of a larger system." },
+  {
+    "id": 9,
+    "name": "Purposeful / intentional",
+    "feedback": "Designed with a specific function or goal in mind.",
+    "icon": "assets/traits/purposeful_intentional.png"
+  },
+  {
+    "id": 10,
+    "name": "Emits output / produces effect",
+    "feedback": "Generates a change, output, or impact on its environment.",
+    "icon": "assets/traits/emits_output_produces_effect.png"
+  },
+  {
+    "id": 11,
+    "name": "Processes or regulates logic/signals",
+    "feedback": "Handles, controls, or transforms information or signals.",
+    "icon": "assets/traits/processes_regulates_logic_signals.png"
+  },
+  {
+    "id": 12,
+    "name": "Transforms or modifies internal state",
+    "feedback": "Undergoes internal changes in condition, status, or form.",
+    "icon": "assets/traits/transforms_modifies_internal_state.png"
+  },
+  {
+    "id": 13,
+    "name": "Interacts with humans directly",
+    "feedback": "Designed for direct engagement, use, or response by humans.",
+    "icon": "assets/traits/interacts_humans_directly.png"
+  },
+  {
+    "id": 14,
+    "name": "Part of a larger system",
+    "feedback": "Functions as a component within a broader interconnected system.",
+    "icon": "assets/traits/part_of_larger_system.png"
+  },
+  {
+    "id": 15,
+    "name": "Autonomous in function",
+    "feedback": "Operates independently without needing continuous external control.",
+    "icon": "assets/traits/autonomous_in_function.png"
+  },
+  {
+    "id": 16,
+    "name": "System-critical",
+    "feedback": "Essential to the operation or success of a larger system.",
+    "icon": "assets/traits/system_critical.png"
+  },
 
-  { "id": 17, "name": "Symbolic / representational", "feedback": "Stands for or represents something beyond itself." },
-  { "id": 18, "name": "Communicative", "feedback": "Conveys information, ideas, or meaning to others." },
-  { "id": 19, "name": "Logical / rule-based", "feedback": "Organized according to a set of rules, principles, or formal structures." },
-  { "id": 20, "name": "Hierarchical / modular", "feedback": "Organized in layers, levels, or modular subunits." },
-  { "id": 21, "name": "Behavior-guiding", "feedback": "Influences or prescribes behavior, decisions, or actions." },
-  { "id": 22, "name": "Self-referential / meta-conceptual", "feedback": "Refers to or describes itself or its own category." },
-  { "id": 23, "name": "Temporal", "feedback": "Relates to time, timing, or sequences of change." },
-  { "id": 24, "name": "Contextual abstraction", "feedback": "Derives meaning from the surrounding context rather than being absolute." },
+  {
+    "id": 17,
+    "name": "Symbolic / representational",
+    "feedback": "Stands for or represents something beyond itself.",
+    "icon": "assets/traits/symbolic_representational.png"
+  },
+  {
+    "id": 18,
+    "name": "Communicative",
+    "feedback": "Conveys information, ideas, or meaning to others.",
+    "icon": "assets/traits/communicative.png"
+  },
+  {
+    "id": 19,
+    "name": "Logical / rule-based",
+    "feedback": "Organized according to a set of rules, principles, or formal structures.",
+    "icon": "assets/traits/logical_rule_based.png"
+  },
+  {
+    "id": 20,
+    "name": "Hierarchical / modular",
+    "feedback": "Organized in layers, levels, or modular subunits.",
+    "icon": "assets/traits/hierarchical_modular.png"
+  },
+  {
+    "id": 21,
+    "name": "Behavior-guiding",
+    "feedback": "Influences or prescribes behavior, decisions, or actions.",
+    "icon": "assets/traits/behavior_guiding.png"
+  },
+  {
+    "id": 22,
+    "name": "Self-referential / meta-conceptual",
+    "feedback": "Refers to or describes itself or its own category.",
+    "icon": "assets/traits/self_referential_meta_conceptual.png"
+  },
+  {
+    "id": 23,
+    "name": "Temporal",
+    "feedback": "Relates to time, timing, or sequences of change.",
+    "icon": "assets/traits/temporal.png"
+  },
+  {
+    "id": 24,
+    "name": "Contextual abstraction",
+    "feedback": "Derives meaning from the surrounding context rather than being absolute.",
+    "icon": "assets/traits/contextual_abstraction.png"
+  },
 
-  { "id": 25, "name": "Socially / culturally constructed", "feedback": "Defined primarily by collective human agreements, traditions, or culture." },
-  { "id": 26, "name": "Defined by a group/system", "feedback": "Recognized or sustained by the agreement of a broader group or system." },
-  { "id": 27, "name": "Linked to identity or role", "feedback": "Associated with social identity, status, or function." },
-  { "id": 28, "name": "Regulated / governed", "feedback": "Subject to rules, laws, standards, or enforcement." },
-  { "id": 29, "name": "Teachable / transmissible", "feedback": "Knowledge about it can be formally taught or passed on to others." },
-  { "id": 30, "name": "Visible", "feedback": "Its existence or attributes are outwardly observable." },
-  { "id": 31, "name": "Context-sensitive", "feedback": "Meaning or behavior changes based on surrounding circumstances." },
-  { "id": 32, "name": "Widely known", "feedback": "Recognized and understood by a broad public audience." }
+  {
+    "id": 25,
+    "name": "Socially / culturally constructed",
+    "feedback": "Defined primarily by collective human agreements, traditions, or culture.",
+    "icon": "assets/traits/socially_culturally_constructed.png"
+  },
+  {
+    "id": 26,
+    "name": "Defined by a group/system",
+    "feedback": "Recognized or sustained by the agreement of a broader group or system.",
+    "icon": "assets/traits/defined_by_group_system.png"
+  },
+  {
+    "id": 27,
+    "name": "Linked to identity or role",
+    "feedback": "Associated with social identity, status, or function.",
+    "icon": "assets/traits/linked_to_identity_role.png"
+  },
+  {
+    "id": 28,
+    "name": "Regulated / governed",
+    "feedback": "Subject to rules, laws, standards, or enforcement.",
+    "icon": "assets/traits/regulated_governed.png"
+  },
+  {
+    "id": 29,
+    "name": "Teachable / transmissible",
+    "feedback": "Knowledge about it can be formally taught or passed on to others.",
+    "icon": "assets/traits/teachable_transmissible.png"
+  },
+  {
+    "id": 30,
+    "name": "Visible",
+    "feedback": "Its existence or attributes are outwardly observable.",
+    "icon": "assets/traits/visible.png"
+  },
+  {
+    "id": 31,
+    "name": "Context-sensitive",
+    "feedback": "Meaning or behavior changes based on surrounding circumstances.",
+    "icon": "assets/traits/context_sensitive.png"
+  },
+  {
+    "id": 32,
+    "name": "Widely known",
+    "feedback": "Recognized and understood by a broad public audience.",
+    "icon": "assets/traits/widely_known.png"
+  }
 ]
