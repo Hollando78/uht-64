@@ -13,6 +13,12 @@
       "Visible",
       "Widely known"
     ],
+    "feedback": {
+      "Physical object": "A rock exists physically and can be directly touched and observed.",
+      "Fixed/static": "Rocks do not change position or form by themselves under normal conditions.",
+      "Material form": "It is composed of solid matter, not an idea or concept.",
+      "Passive": "A rock has no output, purpose, or autonomous action — it simply exists."
+    },
     "image": "assets/rock.png",
     "description": "A natural, solid aggregate of minerals — stable, perceptible, passive, and widely recognized across cultures."
   },
@@ -41,6 +47,15 @@
       "Context-sensitive",
       "Widely known"
     ],
+    "feedback": {
+      "Physical object": "The bridge is a tangible structure spanning a distance.",
+      "Man-made / synthetic": "This bridge was engineered and built by humans.",
+      "Fixed/static": "It remains stationary, providing reliable support across space.",
+      "Structural": "Its primary function is to bear loads and connect two points physically.",
+      "Perceptible": "It is visible and can be sensed directly by sight and touch.",
+      "Material form": "Constructed of materials like stone, steel, or concrete.",
+      "Passive": "The bridge does not produce any active effect; it passively supports."
+    },
     "image": "assets/bridge.png",
     "description": "A man-made structure that enables passage across obstacles like rivers or valleys — essential, visible, regulated, and socially constructed."
   },
@@ -66,6 +81,14 @@
       "Context-sensitive",
       "Widely known"
     ],
+    "feedback": {
+      "Physical object": "An oak tree is a living entity with tangible mass and form.",
+      "Biological or biologically-inspired": "It is a naturally occurring biological organism.",
+      "Fixed/static": "While it grows, its rooted position remains fixed relative to the ground.",
+      "Perceptible": "Its form, structure, and seasonal changes are easily sensed.",
+      "Material form": "It consists of biological matter — wood, leaves, bark.",
+      "Passive": "The tree acts according to natural processes without intentional output."
+    },
     "image": "assets/oak_tree.png",
     "description": "A biological, self-sustaining organism that grows, changes with seasons, and plays a critical role in ecosystems — material, perceptible, and universally known."
   },
@@ -90,6 +113,14 @@
       "Context-sensitive",
       "Widely known"
     ],
+    "feedback": {
+      "Physical object": "A candle has a definite, tangible shape made of wax.",
+      "Man-made / synthetic": "It is crafted by humans for the purpose of producing light.",
+      "Fixed/static": "The candle’s body remains stationary while burning.",
+      "Perceptible": "You can see, touch, and even smell it when burning.",
+      "Material form": "Composed of a physical wax substance.",
+      "Emits output / produces effect": "Once lit, it produces light and heat."
+    },
     "image": "assets/candle.png",
     "description": "A man-made object that emits light and heat, transforming itself over time — a symbolic and visible source of illumination across cultures."
   },
@@ -122,6 +153,16 @@
       "Context-sensitive",
       "Widely known"
     ],
+    "feedback": {
+      "Physical object": "The clock occupies physical space and can be touched and seen.",
+      "Man-made / synthetic": "It is a human invention to measure and display time.",
+      "Fixed/static": "The device itself is stationary, although its internal parts move.",
+      "Perceptible": "It can be heard (ticking), seen (face/hands), and touched.",
+      "Material form": "It is composed of materials like metal, glass, and plastic.",
+      "Purposeful / intentional": "Its function — keeping and showing time — is by human design.",
+      "Emits output / produces effect": "It outputs the time visually (and sometimes audibly).",
+      "Processes or regulates logic/signals": "It processes time signals internally through mechanical or electronic means."
+    },
     "image": "assets/clock.png",
     "description": "A mechanical or electronic device that measures and displays the passage of time, guiding human activities through standardized, communicative signals."
   },
@@ -154,6 +195,15 @@
       "Context-sensitive",
       "Widely known"
     ],
+    "feedback": {
+      "Physical object": "A book is a material artifact that can be held, opened, and read.",
+      "Man-made / synthetic": "It is authored, manufactured, and published by humans.",
+      "Fixed/static": "Once printed, the content and structure do not change.",
+      "Perceptible": "It is readable, touchable, and sometimes illustrated.",
+      "Material form": "Made of paper, ink, binding glue, and covers.",
+      "Symbolic / representational": "It encodes meaning through words and images.",
+      "Communicative": "Designed specifically to convey ideas and information to readers."
+    },
     "image": "assets/book.png",
     "description": "A tangible medium that stores and communicates symbolic information, structured to guide human understanding across cultures and contexts."
   }

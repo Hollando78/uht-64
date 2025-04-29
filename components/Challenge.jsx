@@ -70,17 +70,20 @@ export default function Challenge() {
   const formatTraitsList = (traitsArray) => {
     return traitsArray.length > 0 ? traitsArray.map(traitName => {
       const traitInfo = traits.find(t => t.name === traitName);
+      const entityFeedback = challengeEntity?.feedback?.[traitName];
       return (
         <div key={traitName} className="mb-2 ml-2">
           <div className="font-bold">{traitName}</div>
-          {traitInfo?.feedback && (
+          {entityFeedback ? (
+            <div className="text-xs text-gray-600 ml-4 italic">"{entityFeedback}"</div>
+          ) : traitInfo?.feedback ? (
             <div className="text-xs text-gray-600 ml-4 italic">"{traitInfo.feedback}"</div>
-          )}
+          ) : null}
         </div>
       );
     }) : <div>None</div>;
   };
-
+  
   const generateHexCode = () => {
     return traits.map(trait => (selectedTraits.includes(trait.name) ? '1' : '0')).join('').match(/.{1,4}/g)
       ?.map(nibble => parseInt(nibble, 2).toString(16).toUpperCase()).join('') || '';
