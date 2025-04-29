@@ -71,10 +71,10 @@ export default function Challenge() {
     return traitsArray.length > 0 ? traitsArray.map(traitName => {
       const traitInfo = traits.find(t => t.name === traitName);
       return (
-        <div key={traitName} className="mb-2 p-2 border rounded bg-gray-50">
-          <div className="font-semibold">{traitName}</div>
+        <div key={traitName} className="mb-2 ml-2">
+          <div className="font-bold">{traitName}</div>
           {traitInfo?.feedback && (
-            <div className="text-xs text-gray-600 ml-2">{traitInfo.feedback}</div>
+            <div className="text-xs text-gray-600 ml-4 italic">"{traitInfo.feedback}"</div>
           )}
         </div>
       );
