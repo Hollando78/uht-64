@@ -13,6 +13,7 @@ export default function Challenge() {
     Social: false,
   });
   const [showHints, setShowHints] = useState(false);
+  const [hintUsed, setHintUsed] = useState(false);
 
   const startChallenge = () => {
     const randomIndex = Math.floor(Math.random() * entities.length);
@@ -20,6 +21,7 @@ export default function Challenge() {
     setSelectedTraits([]);
     setResult(null);
     setShowHints(false);
+    setHintUsed(false);
     setOpenLayers({ Physical: true, Functional: false, Abstract: false, Social: false });
   };
 
@@ -39,7 +41,9 @@ export default function Challenge() {
     const missedTraits = [...correctSet].filter(trait => !userSet.has(trait));
     const extraTraits = [...userSet].filter(trait => !correctSet.has(trait));
 
-    setResult({ correctMatches, missedTraits, extraTraits });
+    const score = Math.max(0, 100 - (missedTraits.length * 5 + extraTraits.length * 5) - (hintUsed ? 10 : 0));
+
+    setResult({ correctMatches, missedTraits, extraTraits, score });
     setOpenLayers({ Physical: false, Functional: false, Abstract: false, Social: false });
   };
 
@@ -67,7 +71,7 @@ export default function Challenge() {
     return traitsArray.length > 0 ? traitsArray.map(traitName => {
       const traitInfo = traits.find(t => t.name === traitName);
       return (
-        <div key={traitName} className="mb-2">
+        <div key={traitName} className="mb-2 p-2 border rounded bg-gray-50">
           <div className="font-semibold">{traitName}</div>
           {traitInfo?.feedback && (
             <div className="text-xs text-gray-600 ml-2">{traitInfo.feedback}</div>
@@ -94,13 +98,13 @@ export default function Challenge() {
 
       {challengeEntity && (
         <div className="w-full flex flex-col items-center">
-          <div className="w-32 h-32 overflow-hidden flex items-center justify-center mb-2 rounded shadow">
+          <div className="w-64 h-64 overflow-hidden flex items-center justify-center mb-2 rounded shadow">
             <img
               src={challengeEntity.image}
               alt={challengeEntity.name}
-              width="128"
-              height="128"
-              className="w-32 h-32 object-contain"
+              width="256"
+              height="256"
+              className="w-64 h-64 object-contain"
               loading="lazy"
             />
           </div>
@@ -112,10 +116,11 @@ export default function Challenge() {
           <p className="text-xs mb-4 italic text-center">Select the traits you think apply:</p>
 
           <button
-            onClick={() => setShowHints(!showHints)}
-            className="mb-4 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded"
+            onClick={() => !hintUsed && (setShowHints(true), setHintUsed(true))}
+            className={`mb-4 ${hintUsed ? 'bg-gray-400' : 'bg-yellow-500 hover:bg-yellow-600'} text-white font-bold py-2 px-4 rounded`}
+            disabled={hintUsed}
           >
-            {showHints ? 'Hide Hints' : 'Show Hints'}
+            {hintUsed ? 'Hint Used' : 'Show Hints'}
           </button>
 
           {layerNames.map((layer) => (
@@ -155,12 +160,13 @@ export default function Challenge() {
           {result && (
             <div className="text-left w-full mt-6">
               <h3 className="text-lg font-semibold mb-2">Results:</h3>
-              <p><strong>Correct:</strong></p>
-              <div className="text-green-700 ml-4 space-y-1">{formatTraitsList(result.correctMatches)}</div>
-              <p className="mt-2"><strong>Missed:</strong></p>
-              <div className="text-red-700 ml-4 space-y-1">{formatTraitsList(result.missedTraits)}</div>
-              <p className="mt-2"><strong>Extras:</strong></p>
-              <div className="text-yellow-700 ml-4 space-y-1">{formatTraitsList(result.extraTraits)}</div>
+              <p className="mb-2"><strong>Score: {result.score}%</strong></p>
+              <p className="mt-2"><strong>Correct:</strong></p>
+              <div className="text-green-700 ml-4 space-y-2">{formatTraitsList(result.correctMatches)}</div>
+              <p className="mt-4"><strong>Missed:</strong></p>
+              <div className="text-red-700 ml-4 space-y-2">{formatTraitsList(result.missedTraits)}</div>
+              <p className="mt-4"><strong>Extras:</strong></p>
+              <div className="text-yellow-700 ml-4 space-y-2">{formatTraitsList(result.extraTraits)}</div>
 
               <button onClick={startChallenge} className="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                 Try Another
