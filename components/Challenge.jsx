@@ -38,6 +38,7 @@ export default function Challenge() {
     const extraTraits = [...userSet].filter(trait => !correctSet.has(trait));
 
     setResult({ correctMatches, missedTraits, extraTraits });
+    setOpenLayers({ Physical: false, Functional: false, Abstract: false, Social: false });
   };
 
   const layerNames = ["Physical", "Functional", "Abstract", "Social"];
@@ -92,17 +93,20 @@ export default function Challenge() {
               </button>
 
               {openLayers[layer] && (
-                <div className="border-l-4 border-blue-400 pl-4 mt-2 max-h-48 overflow-y-auto space-y-2">
+                <div className="border-l-4 border-blue-400 pl-4 mt-2 max-h-48 overflow-y-auto space-y-1">
                   {traits.filter((trait, index) => getLayer(index) === layer).map((trait) => (
-                    <label key={trait.id} className="flex items-center space-x-2 w-full">
+                    <div
+                      key={trait.id}
+                      className={`flex items-center space-x-2 p-1 rounded ${selectedTraits.includes(trait.name) ? 'bg-green-200' : ''}`}
+                    >
                       <input
                         type="checkbox"
                         checked={selectedTraits.includes(trait.name)}
                         onChange={() => toggleTrait(trait.name)}
                         className="h-4 w-4"
                       />
-                      <span className="text-sm w-48 truncate">{trait.name}</span>
-                    </label>
+                      <span className="text-sm truncate">{trait.name}</span>
+                    </div>
                   ))}
                 </div>
               )}
@@ -117,11 +121,11 @@ export default function Challenge() {
             <div className="text-left w-full mt-6">
               <h3 className="text-lg font-semibold mb-2">Results:</h3>
               <p><strong>Correct:</strong></p>
-              <div className="text-green-700 ml-4">{formatTraitsList(result.correctMatches)}</div>
+              <div className="text-green-700 ml-4 space-y-1">{formatTraitsList(result.correctMatches)}</div>
               <p className="mt-2"><strong>Missed:</strong></p>
-              <div className="text-red-700 ml-4">{formatTraitsList(result.missedTraits)}</div>
+              <div className="text-red-700 ml-4 space-y-1">{formatTraitsList(result.missedTraits)}</div>
               <p className="mt-2"><strong>Extras:</strong></p>
-              <div className="text-yellow-700 ml-4">{formatTraitsList(result.extraTraits)}</div>
+              <div className="text-yellow-700 ml-4 space-y-1">{formatTraitsList(result.extraTraits)}</div>
 
               <button onClick={startChallenge} className="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                 Try Another
