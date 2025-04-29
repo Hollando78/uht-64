@@ -58,6 +58,11 @@ export default function Challenge() {
     return traitsArray.length > 0 ? traitsArray.map(trait => (<div key={trait}>{trait}</div>)) : <div>None</div>;
   };
 
+  const generateHexCode = () => {
+    return traits.map(trait => (selectedTraits.includes(trait.name) ? '1' : '0')).join('').match(/.{1,4}/g)
+      ?.map(nibble => parseInt(nibble, 2).toString(16).toUpperCase()).join('') || '';
+  };
+
   return (
     <div className="p-4 flex flex-col items-center space-y-4 max-w-md mx-auto">
       <h1 className="text-2xl font-bold">UHT Trait Challenge</h1>
@@ -70,7 +75,7 @@ export default function Challenge() {
 
       {challengeEntity && (
         <div className="w-full flex flex-col items-center">
-          <div className="w-32 h-32 overflow-hidden flex items-center justify-center mb-4 rounded shadow">
+          <div className="w-32 h-32 overflow-hidden flex items-center justify-center mb-2 rounded shadow">
             <img
               src={challengeEntity.image}
               alt={challengeEntity.name}
@@ -80,6 +85,9 @@ export default function Challenge() {
               loading="lazy"
             />
           </div>
+          <p className="text-xs text-gray-600">Traits required: {challengeEntity.traits.length}</p>
+          <p className="text-xs text-gray-600">Current Hex: {generateHexCode()}</p>
+
           <h2 className="text-xl font-semibold mb-2 text-center">{challengeEntity.name}</h2>
           <p className="text-xs mb-4 italic text-center">Select the traits you think apply:</p>
 
