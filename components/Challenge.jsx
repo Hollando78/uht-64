@@ -8,9 +8,9 @@ export default function Challenge() {
   const [result, setResult] = useState(null);
   const [openLayers, setOpenLayers] = useState({
     Physical: true,
-    Functional: true,
-    Abstract: true,
-    Social: true,
+    Functional: false,
+    Abstract: false,
+    Social: false,
   });
 
   const startChallenge = () => {
@@ -18,6 +18,7 @@ export default function Challenge() {
     setChallengeEntity(entities[randomIndex]);
     setSelectedTraits([]);
     setResult(null);
+    setOpenLayers({ Physical: true, Functional: false, Abstract: false, Social: false });
   };
 
   const toggleTrait = (traitName) => {
@@ -52,6 +53,10 @@ export default function Challenge() {
     setOpenLayers(prev => ({ ...prev, [layer]: !prev[layer] }));
   };
 
+  const formatTraitsList = (traitsArray) => {
+    return traitsArray.length > 0 ? traitsArray.map(trait => (<div key={trait}>{trait}</div>)) : <div>None</div>;
+  };
+
   return (
     <div className="p-4 flex flex-col items-center space-y-4 max-w-md mx-auto">
       <h1 className="text-2xl font-bold">UHT Trait Challenge</h1>
@@ -64,20 +69,16 @@ export default function Challenge() {
 
       {challengeEntity && (
         <div className="w-full flex flex-col items-center">
-          <div className="w-16 h-16 overflow-hidden flex items-center justify-center mb-4 rounded shadow">
-      
-  <img
-    src={challengeEntity.image}
-    alt={challengeEntity.name}
-    width="128"
-    height="128"
-    className="w-32 h-32 object-contain"
-    loading="lazy"
-  />
-</div>
-
-
-
+          <div className="w-32 h-32 overflow-hidden flex items-center justify-center mb-4 rounded shadow">
+            <img
+              src={challengeEntity.image}
+              alt={challengeEntity.name}
+              width="128"
+              height="128"
+              className="w-32 h-32 object-contain"
+              loading="lazy"
+            />
+          </div>
           <h2 className="text-xl font-semibold mb-2 text-center">{challengeEntity.name}</h2>
           <p className="text-xs mb-4 italic text-center">Select the traits you think apply:</p>
 
@@ -115,17 +116,14 @@ export default function Challenge() {
           {result && (
             <div className="text-left w-full mt-6">
               <h3 className="text-lg font-semibold mb-2">Results:</h3>
-              <p><strong>Correct:</strong> {result.correctMatches.length}</p>
-              <p><strong>Missed:</strong> {result.missedTraits.length}</p>
-              <p><strong>Extras:</strong> {result.extraTraits.length}</p>
+              <p><strong>Correct:</strong></p>
+              <div className="text-green-700 ml-4">{formatTraitsList(result.correctMatches)}</div>
+              <p className="mt-2"><strong>Missed:</strong></p>
+              <div className="text-red-700 ml-4">{formatTraitsList(result.missedTraits)}</div>
+              <p className="mt-2"><strong>Extras:</strong></p>
+              <div className="text-yellow-700 ml-4">{formatTraitsList(result.extraTraits)}</div>
 
-              <div className="mt-2 space-y-2">
-                <p className="text-green-700">✔ Correct Traits: {result.correctMatches.join(', ')}</p>
-                <p className="text-red-700">❌ Missed Traits: {result.missedTraits.join(', ')}</p>
-                <p className="text-yellow-700">⚠️ Extra Traits: {result.extraTraits.join(', ')}</p>
-              </div>
-
-              <button onClick={startChallenge} className="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              <button onClick={startChallenge} className="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                 Try Another
               </button>
             </div>
