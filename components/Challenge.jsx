@@ -64,18 +64,11 @@ export default function Challenge() {
 
       {challengeEntity && (
         <div className="w-full flex flex-col items-center">
-<div className="w-32 h-32 overflow-hidden flex items-center justify-center mb-4 rounded shadow">
-  <img
-    src={challengeEntity.image}
-    alt={challengeEntity.name}
-    className="max-w-full max-h-full object-contain"
-  />
-</div>
-
-
-
-          <h2 className="text-xl font-semibold mb-2">{challengeEntity.name}</h2>
-          <p className="text-xs mb-4 italic">Select the traits you think apply:</p>
+          <div className="w-32 h-32 overflow-hidden flex items-center justify-center mb-4 rounded shadow">
+            <img src={challengeEntity.image} alt={challengeEntity.name} className="max-w-full max-h-full object-contain" />
+          </div>
+          <h2 className="text-xl font-semibold mb-2 text-center">{challengeEntity.name}</h2>
+          <p className="text-xs mb-4 italic text-center">Select the traits you think apply:</p>
 
           {layerNames.map((layer) => (
             <div key={layer} className="w-full mb-2">
@@ -87,7 +80,7 @@ export default function Challenge() {
               </button>
 
               {openLayers[layer] && (
-                <div className="border-l-4 border-blue-400 pl-4 mt-2 space-y-2">
+                <div className="border-l-4 border-blue-400 pl-4 mt-2 max-h-48 overflow-y-auto space-y-2">
                   {traits.filter((trait, index) => getLayer(index) === layer).map((trait) => (
                     <label key={trait.id} className="flex items-center space-x-2 w-full">
                       <input
