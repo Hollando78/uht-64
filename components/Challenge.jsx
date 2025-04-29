@@ -64,7 +64,17 @@ export default function Challenge() {
   };
 
   const formatTraitsList = (traitsArray) => {
-    return traitsArray.length > 0 ? traitsArray.map(trait => (<div key={trait}>{trait}</div>)) : <div>None</div>;
+    return traitsArray.length > 0 ? traitsArray.map(traitName => {
+      const traitInfo = traits.find(t => t.name === traitName);
+      return (
+        <div key={traitName} className="mb-2">
+          <div className="font-semibold">{traitName}</div>
+          {traitInfo?.feedback && (
+            <div className="text-xs text-gray-600 ml-2">{traitInfo.feedback}</div>
+          )}
+        </div>
+      );
+    }) : <div>None</div>;
   };
 
   const generateHexCode = () => {
