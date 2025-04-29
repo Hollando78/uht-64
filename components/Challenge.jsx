@@ -12,12 +12,14 @@ export default function Challenge() {
     Abstract: false,
     Social: false,
   });
+  const [showHints, setShowHints] = useState(false);
 
   const startChallenge = () => {
     const randomIndex = Math.floor(Math.random() * entities.length);
     setChallengeEntity(entities[randomIndex]);
     setSelectedTraits([]);
     setResult(null);
+    setShowHints(false);
     setOpenLayers({ Physical: true, Functional: false, Abstract: false, Social: false });
   };
 
@@ -48,6 +50,13 @@ export default function Challenge() {
     if (index >= 8 && index < 16) return "Functional";
     if (index >= 16 && index < 24) return "Abstract";
     return "Social";
+  };
+
+  const countTraitsInLayer = (layer) => {
+    return challengeEntity ? challengeEntity.traits.filter(traitName => {
+      const traitIndex = traits.findIndex(trait => trait.name === traitName);
+      return getLayer(traitIndex) === layer;
+    }).length : 0;
   };
 
   const toggleLayer = (layer) => {
@@ -86,10 +95,18 @@ export default function Challenge() {
             />
           </div>
           <p className="text-xs text-gray-600">Traits required: {challengeEntity.traits.length}</p>
+          <p className="text-xs text-gray-600">Selected Traits: {selectedTraits.length}</p>
           <p className="text-xs text-gray-600">Current Hex: {generateHexCode()}</p>
 
           <h2 className="text-xl font-semibold mb-2 text-center">{challengeEntity.name}</h2>
           <p className="text-xs mb-4 italic text-center">Select the traits you think apply:</p>
+
+          <button
+            onClick={() => setShowHints(!showHints)}
+            className="mb-4 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded"
+          >
+            {showHints ? 'Hide Hints' : 'Show Hints'}
+          </button>
 
           {layerNames.map((layer) => (
             <div key={layer} className="w-full mb-2">
@@ -97,7 +114,7 @@ export default function Challenge() {
                 onClick={() => toggleLayer(layer)}
                 className="w-full bg-gray-200 hover:bg-gray-300 text-left font-bold py-2 px-4 rounded"
               >
-                {openLayers[layer] ? '▼' : '▶'} {layer} Layer
+                {openLayers[layer] ? '▼' : '▶'} {layer} Layer {showHints && `(Needs ${countTraitsInLayer(layer)})`}
               </button>
 
               {openLayers[layer] && (
