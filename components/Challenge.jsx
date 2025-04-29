@@ -65,7 +65,7 @@ export default function Challenge() {
       {challengeEntity && (
         <div className="w-full flex flex-col items-center">
           <div className="w-16 h-16 overflow-hidden flex items-center justify-center mb-4 rounded shadow">
-          <div className="w-32 h-32 overflow-hidden flex items-center justify-center mb-4 rounded shadow">
+      
   <img
     src={challengeEntity.image}
     alt={challengeEntity.name}
@@ -75,6 +75,7 @@ export default function Challenge() {
     loading="lazy"
   />
 </div>
+
 
 
           <h2 className="text-xl font-semibold mb-2 text-center">{challengeEntity.name}</h2>
