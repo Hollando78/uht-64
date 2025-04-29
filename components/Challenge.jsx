@@ -4,6 +4,7 @@ import traits from '../data/traits.json';
 
 export default function Challenge() {
   const [challengeEntity, setChallengeEntity] = useState(null);
+  const [seenEntities, setSeenEntities] = useState([]);
   const [selectedTraits, setSelectedTraits] = useState([]);
   const [result, setResult] = useState(null);
   const [openLayers, setOpenLayers] = useState({
@@ -14,22 +15,29 @@ export default function Challenge() {
   });
   const [showHints, setShowHints] = useState(false);
   const [hintUsed, setHintUsed] = useState(false);
-
+  
   const startChallenge = () => {
-    const randomIndex = Math.floor(Math.random() * entities.length);
-    setChallengeEntity(entities[randomIndex]);
+    let remainingEntities = entities.filter(e => !seenEntities.includes(e.name));
+  
+    if (remainingEntities.length === 0) {
+      // All entities shown once, reset
+      remainingEntities = entities;
+      setSeenEntities([]);
+    }
+  
+    const randomIndex = Math.floor(Math.random() * remainingEntities.length);
+    const nextEntity = remainingEntities[randomIndex];
+  
+    setChallengeEntity(nextEntity);
     setSelectedTraits([]);
     setResult(null);
     setShowHints(false);
     setHintUsed(false);
     setOpenLayers({ Physical: true, Functional: false, Abstract: false, Social: false });
+  
+    setSeenEntities(prev => [...prev, nextEntity.name]);
   };
-
-  const toggleTrait = (traitName) => {
-    setSelectedTraits(prev =>
-      prev.includes(traitName) ? prev.filter(t => t !== traitName) : [...prev, traitName]
-    );
-  };
+  
 
   const checkAnswer = () => {
     if (!challengeEntity) return;
