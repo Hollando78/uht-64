@@ -62,7 +62,7 @@
   {
     "id": 3,
     "name": "Oak Tree",
-    "hex": "BF762007",
+    "hex": "BF540000",
     "traits": [
       "Physical object",
       "Biological or biologically-inspired",
@@ -73,25 +73,24 @@
       "Passive",
       "Emits output / produces effect",
       "Transforms or modifies internal state",
-      "Part of a larger system",
-      "Autonomous in function",
-      "Hierarchical / modular",
-      "Temporal",
-      "Visible",
-      "Context-sensitive",
-      "Widely known"
+      "Part of a larger system"
     ],
     "feedback": {
-      "Physical object": "An oak tree is a living entity with tangible mass and form.",
-      "Biological or biologically-inspired": "It is a naturally occurring biological organism.",
-      "Fixed/static": "While it grows, its rooted position remains fixed relative to the ground.",
-      "Perceptible": "Its form, structure, and seasonal changes are easily sensed.",
-      "Material form": "It consists of biological matter — wood, leaves, bark.",
-      "Passive": "The tree acts according to natural processes without intentional output."
+      "Physical object": "An oak tree occupies space and has a tangible, measurable physical presence — it is not conceptual or virtual.",
+      "Biological or biologically-inspired": "It is a naturally occurring organism, governed by biological processes like growth, respiration, and reproduction.",
+      "Fixed/static": "Though it changes over time, it is rooted in one place and does not locomote or change spatial position.",
+      "Structural": "Its form supports weight, organizes internal components (e.g., trunk, branches), and serves as a scaffold for other entities (e.g., nests, vines).",
+      "Perceptible": "It can be seen, touched, smelled, and heard (e.g., rustling), making it directly accessible to the senses.",
+      "Material form": "Composed of organic matter — wood, bark, leaves — its identity is inseparable from its physical substance.",
+      "Passive": "It does not act with intent; its behaviors arise from internal biology and environmental response without agency.",
+      "Emits output / produces effect": "It affects its surroundings through byproducts and interactions — e.g., releasing oxygen, shedding leaves, casting shade.",
+      "Transforms or modifies internal state": "It changes as it grows, responds to seasons, stores nutrients, and heals after damage.",
+      "Part of a larger system": "It is embedded within ecological networks — interacting with soil, water, fungi, insects, and climate in mutual dependence."
     },
     "image": "assets/oak_tree.png",
-    "description": "A biological, self-sustaining organism that grows, changes with seasons, and plays a critical role in ecosystems — material, perceptible, and universally known."
-  },
+    "description": "A rooted biological organism defined by passive structure, natural growth, and ecosystem participation — perceptible, material, and physically embedded without abstract or symbolic identity."
+  }
+  ,
   {
     "id": 4,
     "name": "Candle",
