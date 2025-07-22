@@ -27,7 +27,10 @@ export default function Challenge() {
     const randomIndex = Math.floor(Math.random() * remainingEntities.length);
     const nextEntity = remainingEntities[randomIndex];
 
-    setChallengeEntity(nextEntity);
+    // Flatten nextEntity.traits (object of arrays) into a flat array and store as nextEntity.allTraits
+    const flattenTraits = (traitsObj) => Object.values(traitsObj || {}).flat();
+    const nextEntityWithFlatTraits = { ...nextEntity, allTraits: flattenTraits(nextEntity.traits) };
+    setChallengeEntity(nextEntityWithFlatTraits);
     setSelectedTraits([]);
     setResult(null);
     setShowHints(false);
@@ -45,7 +48,7 @@ export default function Challenge() {
   const checkAnswer = () => {
     if (!challengeEntity) return;
 
-    const correctSet = new Set(challengeEntity.traits);
+    const correctSet = new Set(challengeEntity.allTraits);
     const userSet = new Set(selectedTraits);
 
     const correctMatches = [...userSet].filter(trait => correctSet.has(trait));
@@ -68,7 +71,7 @@ export default function Challenge() {
   };
 
   const countTraitsInLayer = (layer) => {
-    return challengeEntity ? challengeEntity.traits.filter(traitName => {
+    return challengeEntity ? challengeEntity.allTraits.filter(traitName => {
       const traitIndex = traits.findIndex(trait => trait.name === traitName);
       return getLayer(traitIndex) === layer;
     }).length : 0;
@@ -118,13 +121,13 @@ export default function Challenge() {
         <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <div style={{ maxHeight: '16rem', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.5rem', borderRadius: '0.5rem', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' }}>
             <img
-              src={challengeEntity.image}
+              src={challengeEntity.image_url}
               alt={challengeEntity.name}
               style={{ maxHeight: '16rem', width: 'auto', objectFit: 'contain' }}
               loading="lazy"
             />
           </div>
-          <p style={{ fontSize: '0.75rem', color: '#4B5563' }}>Traits required: {challengeEntity.traits.length}</p>
+          <p style={{ fontSize: '0.75rem', color: '#4B5563' }}>Traits required: {challengeEntity.allTraits.length}</p>
           <p style={{ fontSize: '0.75rem', color: '#4B5563' }}>Selected Traits: {selectedTraits.length}</p>
           <p style={{ fontSize: '0.75rem', color: '#4B5563' }}>Current Hex: {generateHexCode()}</p>
 
