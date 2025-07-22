@@ -2,7 +2,7 @@
 {
   "entity": "Boolean Expression",
   "uht_code": "4080FFCF",
-  "image_url": "/validation_set/images/boolean_expression.png",
+  "image_url": "/assets/entities/boolean_expression.png",
   "traits": {
     "physical": [
       "Man-made / synthetic"
@@ -66,15 +66,14 @@
     "Context-sensitive": "Included â€” Interpretation depends on logical context or variable state.",
     "Widely known": "Included â€” Commonly taught and understood in technical domains."
   },
-  "encoding_notes": "A Boolean Expression is a symbolic, logical, and culturally embedded abstraction with formal purpose and syntactic clarity. It is not a processor or emitter but a representational structure used for reasoning and control. This encoding mirrors the UHT profile of other abstract formal entities such as 'Proof (in Logic)'.",
-  "image": "images/boolean_expression.png"
+  "encoding_notes": "A Boolean Expression is a symbolic, logical, and culturally embedded abstraction with formal purpose and syntactic clarity. It is not a processor or emitter but a representational structure used for reasoning and control. This encoding mirrors the UHT profile of other abstract formal entities such as 'Proof (in Logic)'."
 }
 
 ,
 {
   "entity": "Budget Spreadsheet",
   "uht_code": "448CF7DF",
-  "image_url": "/validation_set/images/budget_spreadsheet.png",
+  "image_url": "/assets/entities/budget_spreadsheet.png",
   "traits": {
     "physical": [
       "Man-made / synthetic",
@@ -138,14 +137,13 @@
     "Context-sensitive": "Included â€” Its interpretation depends on its specific use, audience, and data.",
     "Widely known": "Included â€” The idea of a budget spreadsheet is globally recognized and foundational."
   },
-  "encoding_notes": "This encoding reflects a highly compressed and minimalist view of a budget spreadsheet as a purely abstract, conceptual tool. Physical and functional traits are excluded unless absolutely core to its identity as a non-autonomous software agent, while its abstract and social traits are fully represented due to its role in human knowledge and cultural systems. The resulting code is optimized for semantic density, excluding traits that are merely a result of its interpretation or use rather than its intrinsic nature.",
-  "image": "images/budget_spreadsheet.png"
+  "encoding_notes": "This encoding reflects a highly compressed and minimalist view of a budget spreadsheet as a purely abstract, conceptual tool. Physical and functional traits are excluded unless absolutely core to its identity as a non-autonomous software agent, while its abstract and social traits are fully represented due to its role in human knowledge and cultural systems. The resulting code is optimized for semantic density, excluding traits that are merely a result of its interpretation or use rather than its intrinsic nature."
 }
 ,
 {
   "entity": "Calendar",
   "uht_code": "4480F7CF",
-  "image_url": "/validation_set/images/calendar.png",
+  "image_url": "/assets/entities/calendar.png",
   "traits": {
     "physical": [
       "Man-made / synthetic",
@@ -209,15 +207,14 @@
     "Context-sensitive": "Included â€” Varies across geopolitical and cultural contexts.",
     "Widely known": "Included â€” Universal across human societies."
   },
-  "encoding_notes": "This encoding treats the calendar as a symbolic, logic-based, culturally constructed abstraction designed for temporal organization. It is not a physical object or a processor, but a framework used to coordinate and guide behavior within human systems. The uht_code reflects its highly abstract and socially embedded nature with minimal functional operation.",
-  "image": "images/calendar.png"
+  "encoding_notes": "This encoding treats the calendar as a symbolic, logic-based, culturally constructed abstraction designed for temporal organization. It is not a physical object or a processor, but a framework used to coordinate and guide behavior within human systems. The uht_code reflects its highly abstract and socially embedded nature with minimal functional operation."
 }
 
 ,
 {
   "entity": "Chess Strategy",
   "uht_code": "4088FFCB",
-  "image_url": "/validation_set/images/chess_strategy.png",
+  "image_url": "/assets/entities/chess_strategy.png",
   "traits": {
     "physical": [
       "Man-made / synthetic"
@@ -278,15 +275,14 @@
     "Context-sensitive": "Included â€” Effectiveness depends on many surrounding conditions.",
     "Widely known": "Included â€” Well-known strategies (e.g., King's Indian Defense) are broadly familiar."
   },
-  "encoding_notes": "This encoding represents chess strategy as a symbolic, abstract, and socially-evolved conceptual tool. It is not a physical or autonomous system but one designed to guide human behavior within a formal ruleset. Its role in structured play, education, and community discourse is well reflected in the inclusion of nearly all abstract and social traits.",
-  "image": "images/chess_strategy.png"
+  "encoding_notes": "This encoding represents chess strategy as a symbolic, abstract, and socially-evolved conceptual tool. It is not a physical or autonomous system but one designed to guide human behavior within a formal ruleset. Its role in structured play, education, and community discourse is well reflected in the inclusion of nearly all abstract and social traits."
 }
 
 ,
 {
   "entity": "Concept of Zero",
   "uht_code": "4080FFCF",
-  "image_url": "/validation_set/images/concept_of_zero.png",
+  "image_url": "/assets/entities/concept_of_zero.png",
   "traits": {
     "physical": [
       "Man-made / synthetic"
@@ -347,15 +343,14 @@
     "Context-sensitive": "Included â€” Its interpretation depends on domain and symbolic framework.",
     "Widely known": "Included â€” Zero is known and used across nearly all cultures and systems."
   },
-  "encoding_notes": "This encoding captures the Concept of Zero as an intentional, symbolic, logical abstraction with cultural and pedagogical significance. It is not a functional agent but plays a critical representational role across disciplines. The code correctly places weight in the abstract and social layers, with minimal physical or functional attribution.",
-  "image": "images/concept_of_zero.png"
+  "encoding_notes": "This encoding captures the Concept of Zero as an intentional, symbolic, logical abstraction with cultural and pedagogical significance. It is not a functional agent but plays a critical representational role across disciplines. The code correctly places weight in the abstract and social layers, with minimal physical or functional attribution."
 }
 
 ,
 {
   "entity": "Coordinate System",
   "uht_code": "4000FBDF",
-  "image_url": "/validation_set/images/coordinate_system.png",
+  "image_url": "/assets/entities/coordinate_system.png",
   "traits": {
     "physical": [
       "Man-made / synthetic"
@@ -413,14 +408,13 @@
     "Context-sensitive": "Included â€” Interpretation depends on mathematical context (e.g., `x = y` in algebra vs. logic).",
     "Widely known": "Included â€” The concept of a coordinate system is globally recognized and foundational."
   },
-  "encoding_notes": "This encoding captures the Coordinate System as a purely abstract, human-created conceptual entity. It is defined by its symbolic, logical, and social properties, and its core function is to guide behavior and communicate spatial relationships. Functional traits are excluded based on UHT standards for non-executing frameworks. The inclusion of both Contextual abstraction (24) and Context-sensitive (31) reflects its dual epistemic and interpretive dependencies.",
-  "image": "images/coordinate_system.png"
+  "encoding_notes": "This encoding captures the Coordinate System as a purely abstract, human-created conceptual entity. It is defined by its symbolic, logical, and social properties, and its core function is to guide behavior and communicate spatial relationships. Functional traits are excluded based on UHT standards for non-executing frameworks. The inclusion of both Contextual abstraction (24) and Context-sensitive (31) reflects its dual epistemic and interpretive dependencies."
 }
 ,
 {
   "entity": "Encryption Algorithm",
   "uht_code": "40F7FDDF",
-  "image_url": "/validation_set/images/encryption_algorithm.png",
+  "image_url": "/assets/entities/encryption_algorithm.png",
   "traits": {
     "physical": [
       "Man-made / synthetic"
@@ -487,14 +481,13 @@
     "Context-sensitive": "Included â€” Implementation behavior depends on context of use.",
     "Widely known": "Included â€” Major algorithms are widely disseminated and scrutinized."
   },
-  "encoding_notes": "This encoding captures the Encryption Algorithm as a symbolic, logical, and socially governed construct with real functional significance. It is not a physical object but operates within highly structured technical and cultural frameworks. It is distinct from software *implementations* which would include more physical and functional traits.",
-  "image": "images/encryption_algorithm.png"
+  "encoding_notes": "This encoding captures the Encryption Algorithm as a symbolic, logical, and socially governed construct with real functional significance. It is not a physical object but operates within highly structured technical and cultural frameworks. It is distinct from software *implementations* which would include more physical and functional traits."
 }
 ,
 {
   "entity": "Flowchart",
   "uht_code": "4488F9CF",
-  "image_url": "/validation_set/images/flowchart.png",
+  "image_url": "/assets/entities/flowchart.png",
   "traits": {
     "physical": [
       "Man-made / synthetic",
@@ -555,15 +548,14 @@
     "Context-sensitive": "Included â€” Interpretation depends on the domain (software, logic, business modeling).",
     "Widely known": "Included â€” Commonly used across technical and educational fields."
   },
-  "encoding_notes": "This corrected encoding positions the flowchart as a visual symbolic representation of logical processes. It is primarily abstract and social in nature, with a clear human interface. The updated UHT code reflects the full set of conceptual and social dependencies without introducing unjustified functional or physical traits.",
-  "image": "images/flowchart.png"
+  "encoding_notes": "This corrected encoding positions the flowchart as a visual symbolic representation of logical processes. It is primarily abstract and social in nature, with a clear human interface. The updated UHT code reflects the full set of conceptual and social dependencies without introducing unjustified functional or physical traits."
 }
 
 ,
 {
   "entity": "If-Then Logic Rule",
   "uht_code": "4000FDDD",
-  "image_url": "/validation_set/images/if_then_logic_rule.png",
+  "image_url": "/assets/entities/if_then_logic_rule.png",
   "traits": {
     "physical": [
       "Man-made / synthetic"
@@ -621,14 +613,13 @@
     "Context-sensitive": "Excluded â€” This trait is more aptly described by 'Contextual abstraction' in the abstract layer.",
     "Widely known": "Included â€” The basic concept of 'If-Then' is a globally recognized and foundational idea."
   },
-  "encoding_notes": "This encoding captures the If-Then Logic Rule as a purely abstract, human-created conceptual entity. It is defined by its symbolic, logical, and social properties, and its core function is to guide behavior, a key distinction from other abstract entities. The resulting code reflects its lack of physical and functional traits, with high density in the abstract and social layers.",
-  "image": "images/if_then_logic_rule.png"
+  "encoding_notes": "This encoding captures the If-Then Logic Rule as a purely abstract, human-created conceptual entity. It is defined by its symbolic, logical, and social properties, and its core function is to guide behavior, a key distinction from other abstract entities. The resulting code reflects its lack of physical and functional traits, with high density in the abstract and social layers."
 }
 ,
 {
   "entity": "Mathematical Equation",
   "uht_code": "408CF1DF",
-  "image_url": "/validation_set/images/mathematical_equation.png",
+  "image_url": "/assets/entities/mathematical_equation.png",
   "traits": {
     "physical": [
       "Man-made / synthetic"
@@ -689,15 +680,14 @@
     "Context-sensitive": "Included â€” Interpretation depends on mathematical context (e.g., `x = y` in algebra vs. logic).",
     "Widely known": "Included â€” The idea of an equation is globally recognized and foundational."
   },
-  "encoding_notes": "This encoding captures the equation as a symbolic, rule-based, communicative structure situated within formal systems and cultural transmission. It is not physical or agentive, but it plays a vital abstract and social role in human knowledge systems.",
-  "image": "images/mathematical_equation.png"
+  "encoding_notes": "This encoding captures the equation as a symbolic, rule-based, communicative structure situated within formal systems and cultural transmission. It is not physical or agentive, but it plays a vital abstract and social role in human knowledge systems."
 }
 
 ,
 {
   "entity": "Metadata Tag",
   "uht_code": "4080F9CF",
-  "image_url": "/validation_set/images/metadata_tag.png",
+  "image_url": "/assets/entities/metadata_tag.png",
   "traits": {
     "physical": [
       "Man-made / synthetic"
@@ -759,15 +749,14 @@
     "Context-sensitive": "Included â€” The interpretation of a tag varies by system or domain.",
     "Widely known": "Included â€” The concept of tagging is pervasive across platforms and domains."
   },
-  "encoding_notes": "A metadata tag is a symbolic abstraction used to structure and describe data. It is a communicative and behavior-guiding unit designed for context-dependent interpretation within data systems. Though essential to metadata infrastructure, it is not inherently physical or functionalâ€”it is an informational construct embedded in human-made logical and social frameworks.",
-  "image": "images/metadata_tag.png"
+  "encoding_notes": "A metadata tag is a symbolic abstraction used to structure and describe data. It is a communicative and behavior-guiding unit designed for context-dependent interpretation within data systems. Though essential to metadata infrastructure, it is not inherently physical or functionalâ€”it is an informational construct embedded in human-made logical and social frameworks."
 }
 
 ,
 {
   "entity": "Programming Language Syntax",
   "uht_code": "4000FDCF",
-  "image_url": "/validation_set/images/programming_language_syntax.png",
+  "image_url": "/assets/entities/programming_language_syntax.png",
   "traits": {
     "physical": [
       "Man-made / synthetic"
@@ -828,15 +817,14 @@
     "Context-sensitive": "Included â€” Depends on grammar scope, indentation, and semantic rules.",
     "Widely known": "Included â€” Ubiquitous in global software and education domains."
   },
-  "encoding_notes": "This encoding defines programming language syntax as a symbolic, logical, and socially transmitted abstraction. It is not executable or perceptible by itself, but governs structure across all source code and is widely disseminated through education and tooling. Abstract and social layers are dominant, functional traits excluded by design.",
-  "image": "images/programming_language_syntax.png"
+  "encoding_notes": "This encoding defines programming language syntax as a symbolic, logical, and socially transmitted abstraction. It is not executable or perceptible by itself, but governs structure across all source code and is widely disseminated through education and tooling. Abstract and social layers are dominant, functional traits excluded by design."
 }
 
 ,
 {
   "entity": "Proof (in Logic)",
   "uht_code": "4080FFCF",
-  "image_url": "/validation_set/images/proof_in_logic.png",
+  "image_url": "/assets/entities/proof_in_logic.png",
   "traits": {
     "physical": [
       "Man-made / synthetic"
@@ -897,14 +885,13 @@
     "Context-sensitive": "Included â€” Interpreted differently across logical systems.",
     "Widely known": "Included â€” Central to education, logic, and science."
   },
-  "encoding_notes": "This encoding positions a logical proof as a fully abstract, intentional construct with formal structure and communicative purpose. It is symbolic, hierarchical, and deeply embedded in social and educational systems, but not a physical or functional actor on its own. The UHT code is identical to 'Concept of Zero' because both are fundamentally abstract tools with the same set of universal traits.",
-  "image": "images/proof_in_logic.png"
+  "encoding_notes": "This encoding positions a logical proof as a fully abstract, intentional construct with formal structure and communicative purpose. It is symbolic, hierarchical, and deeply embedded in social and educational systems, but not a physical or functional actor on its own. The UHT code is identical to 'Concept of Zero' because both are fundamentally abstract tools with the same set of universal traits."
 }
 ,
 {
   "entity": "Scientific Theory",
   "uht_code": "4000FFCF",
-  "image_url": "/validation_set/images/scientific_theory.png",
+  "image_url": "/assets/entities/scientific_theory.png",
   "traits": {
     "physical": [
       "Man-made / synthetic"
@@ -966,15 +953,14 @@
     "Context-sensitive": "Included â€” The meaning and applicability of a theory depend on domain-specific assumptions.",
     "Widely known": "Included â€” Prominent theories are globally recognized in academic, educational, and cultural contexts."
   },
-  "encoding_notes": "This encoding captures the Scientific Theory as an abstract, symbolic, and socially embedded framework for explaining phenomena. While it exhibits all abstract traits, its expression and adoption are deeply influenced by social systems. It does not perform functions on its own but guides epistemic and behavioral structures. The code reflects this abstraction-heavy, socially-defined essence with no functional traits.",
-  "image": "images/scientific_theory.png"
+  "encoding_notes": "This encoding captures the Scientific Theory as an abstract, symbolic, and socially embedded framework for explaining phenomena. While it exhibits all abstract traits, its expression and adoption are deeply influenced by social systems. It does not perform functions on its own but guides epistemic and behavioral structures. The code reflects this abstraction-heavy, socially-defined essence with no functional traits."
 }
 
 ,
 {
   "entity": "Story Arc Diagram",
   "uht_code": "4488F9CF",
-  "image_url": "/validation_set/images/story_arc_diagram.png",
+  "image_url": "/assets/entities/story_arc_diagram.png",
   "traits": {
     "physical": [
       "Man-made / synthetic",
@@ -1035,14 +1021,13 @@
     "Context-sensitive": "Included â€” Interpretation shifts with genre or story type.",
     "Widely known": "Included â€” Freytagâ€™s Pyramid, Heroâ€™s Journey, etc. are broadly familiar."
   },
-  "encoding_notes": "This encoding captures the Story Arc Diagram as a perceptual, symbolic structure that organizes narrative logic. It is not an active functional entity but rather an interpretive and context-shaped tool for human use. It is widely taught, seen, and socially maintained, making its abstract and social layers prominent.",
-  "image": "images/story_arc_diagram.png"
+  "encoding_notes": "This encoding captures the Story Arc Diagram as a perceptual, symbolic structure that organizes narrative logic. It is not an active functional entity but rather an interpretive and context-shaped tool for human use. It is widely taught, seen, and socially maintained, making its abstract and social layers prominent."
 }
 ,
 {
   "entity": "Turing Machine",
   "uht_code": "40F3FFCF",
-  "image_url": "/validation_set/images/turing_machine.png",
+  "image_url": "/assets/entities/turing_machine.png",
   "traits": {
     "physical": [
       "Man-made / synthetic"
@@ -1111,15 +1096,14 @@
     "Context-sensitive": "Included â€” Interpretation depends on the specific configuration and tape alphabet.",
     "Widely known": "Included â€” A canonical symbol of computation theory."
   },
-  "encoding_notes": "This encoding recognizes the Turing Machine as a purely formal, symbolic, and logical system. Its purpose, outputs, internal transitions, and autonomy in execution qualify it for inclusion of several key functional traits, while all abstract traits are essential. It is not a physical object, but its social and educational significance is widely acknowledged. The corrected code reflects both theoretical fidelity and alignment with UHTâ€™s minimalist encoding philosophy.",
-  "image": "images/turing_machine.png"
+  "encoding_notes": "This encoding recognizes the Turing Machine as a purely formal, symbolic, and logical system. Its purpose, outputs, internal transitions, and autonomy in execution qualify it for inclusion of several key functional traits, while all abstract traits are essential. It is not a physical object, but its social and educational significance is widely acknowledged. The corrected code reflects both theoretical fidelity and alignment with UHTâ€™s minimalist encoding philosophy."
 }
 
 ,
 {
   "entity": "3D Printer",
   "uht_code": "DEFE3205",
-  "image_url": "/validation_set/images/3d_printer.png",
+  "image_url": "/assets/entities/3d_printer.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -1185,15 +1169,14 @@
     "Context-sensitive": "Excluded â€” Functions uniformly regardless of social or environmental context.",
     "Widely known": "Included â€” Recognized broadly in consumer, educational, and industrial contexts."
   },
-  "encoding_notes": "This encoding reflects the 3D printer as a digitally controlled, semi-autonomous fabrication machine that transforms formal instruction sets into physical output. Its traits emphasize mechanical structure, functional logic, and integration into larger design systems, while remaining grounded in practical, observable operation.",
-  "image": "images/3d_printer.png"
+  "encoding_notes": "This encoding reflects the 3D printer as a digitally controlled, semi-autonomous fabrication machine that transforms formal instruction sets into physical output. Its traits emphasize mechanical structure, functional logic, and integration into larger design systems, while remaining grounded in practical, observable operation."
 }
 
 ,
 {
   "entity": "Air Traffic Control Radar",
   "uht_code": "DEF52211",
-  "image_url": "/validation_set/images/air_traffic_control_radar.png",
+  "image_url": "/assets/entities/air_traffic_control_radar.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -1254,15 +1237,14 @@
     "Context-sensitive": "Excluded â€” Operates based on signal logic, not social or semantic context.",
     "Widely known": "Included â€” The concept of 'radar' is broadly recognized across technical and public domains."
   },
-  "encoding_notes": "Air Traffic Control Radar is encoded as a regulated, fixed-location signal system that emits, processes, and updates tracking data in real-time. It is part of a broader aviation safety infrastructure, uses formal timing logic, and is widely known but not symbolic or identity-linked. Autonomous and communicative traits are excluded due to operator control and lack of symbolic expression. Final UHT code DEF52211 correctly includes regulated and known status in the social layer.",
-  "image": "images/air_traffic_control_radar.png"
+  "encoding_notes": "Air Traffic Control Radar is encoded as a regulated, fixed-location signal system that emits, processes, and updates tracking data in real-time. It is part of a broader aviation safety infrastructure, uses formal timing logic, and is widely known but not symbolic or identity-linked. Autonomous and communicative traits are excluded due to operator control and lack of symbolic expression. Final UHT code DEF52211 correctly includes regulated and known status in the social layer."
 }
 
 ,
 {
   "entity": "Autonomous Drone",
   "uht_code": "CEF67217",
-  "image_url": "/validation_set/images/autonomous_drone.png",
+  "image_url": "/assets/entities/autonomous_drone.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -1326,15 +1308,14 @@
     "Context-sensitive": "Included â€” Responds dynamically to environment (obstacles, GPS conditions, wind).",
     "Widely known": "Included â€” Publicly recognized and common in commercial, recreational, and security contexts."
   },
-  "encoding_notes": "This encoding reflects the autonomous drone as a self-navigating, logic-driven electromechanical system embedded in physical and airspace environments. It outputs, senses, adapts, and communicates within operational and regulatory frameworks. While highly intelligent and visible, it is not symbolic or identity-linked, and is excluded from traits implying personal, cultural, or educational function.",
-  "image": "images/autonomous_drone.png"
+  "encoding_notes": "This encoding reflects the autonomous drone as a self-navigating, logic-driven electromechanical system embedded in physical and airspace environments. It outputs, senses, adapts, and communicates within operational and regulatory frameworks. While highly intelligent and visible, it is not symbolic or identity-linked, and is excluded from traits implying personal, cultural, or educational function."
 }
 
 ,
 {
   "entity": "Blockchain Node",
   "uht_code": "44F7FFFB",
-  "image_url": "/validation_set/images/blockchain_node.png",
+  "image_url": "/assets/entities/blockchain_node.png",
   "traits": {
     "physical": [
       "Man-made / synthetic",
@@ -1406,15 +1387,14 @@
     "Context-sensitive": "Included â€” Behavior shifts depending on role (e.g., archival, light, validator).",
     "Widely known": "Included â€” Well-recognized and discussed in technical and public discourse."
   },
-  "encoding_notes": "This encoding treats the blockchain node as a logical and functional software entity within a decentralized system. Physical and visible traits are excluded to preserve distinction between software role and physical host. High trait density in functional, abstract, and social layers reflects the nodeâ€™s role as a rule-enforcing, symbolic actor embedded in cultural and governance systems.",
-  "image": "images/blockchain_node.png"
+  "encoding_notes": "This encoding treats the blockchain node as a logical and functional software entity within a decentralized system. Physical and visible traits are excluded to preserve distinction between software role and physical host. High trait density in functional, abstract, and social layers reflects the nodeâ€™s role as a rule-enforcing, symbolic actor embedded in cultural and governance systems."
 }
 
 ,
 {
   "entity": "Car Ignition System",
   "uht_code": "DEFC2005",
-  "image_url": "/validation_set/images/car_ignition_system.png",
+  "image_url": "/assets/entities/car_ignition_system.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -1477,15 +1457,14 @@
     "Context-sensitive": "Excluded â€” Performs the same function regardless of environment.",
     "Widely known": "Included â€” Well-known component of nearly all vehicles."
   },
-  "encoding_notes": "This encoding treats the ignition system as a functional component embedded in a car's architecture. It scores strongly in the physical and functional layers due to its material presence, human interaction, and purposeful activation of electrical processes. A single abstract trait is included for its logical role in validating startup conditions. Social traits are limited to public recognizability and physical visibility.",
-  "image": "images/car_ignition_system.png"
+  "encoding_notes": "This encoding treats the ignition system as a functional component embedded in a car's architecture. It scores strongly in the physical and functional layers due to its material presence, human interaction, and purposeful activation of electrical processes. A single abstract trait is included for its logical role in validating startup conditions. Social traits are limited to public recognizability and physical visibility."
 }
 
 ,
 {
   "entity": "Coffee Machine",
   "uht_code": "DEFA2205",
-  "image_url": "/validation_set/images/coffee_machine.png",
+  "image_url": "/assets/entities/coffee_machine.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -1549,15 +1528,14 @@
     "Context-sensitive": "Excluded â€” Operates the same across environments.",
     "Widely known": "Included â€” Recognized globally in both domestic and commercial spaces."
   },
-  "encoding_notes": "This encoding captures the coffee machine as a semi-autonomous, user-facing appliance with clearly structured physical and logical behavior. Its traits emphasize function, perceptibility, and ubiquity, while abstract and social characteristics remain minimal due to its utilitarian purpose.",
-  "image": "images/coffee_machine.png"
+  "encoding_notes": "This encoding captures the coffee machine as a semi-autonomous, user-facing appliance with clearly structured physical and logical behavior. Its traits emphasize function, perceptibility, and ubiquity, while abstract and social characteristics remain minimal due to its utilitarian purpose."
 }
 
 ,
 {
   "entity": "Digital Alarm Clock",
   "uht_code": "DEF82205",
-  "image_url": "/validation_set/images/digital_alarm_clock.png",
+  "image_url": "/assets/entities/digital_alarm_clock.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -1620,15 +1598,14 @@
     "Context-sensitive": "Excluded â€” Function unchanged by setting.",
     "Widely known": "Included â€” Universally recognized domestic object."
   },
-  "encoding_notes": "This encoding captures the digital alarm clock as a physical, standalone device that fulfills timekeeping and alert functions. Its traits are concentrated in the physical and functional layers, with modest abstraction (rule-based and temporal) and socially relevant visibility. Social constructs and symbolic communication are excluded due to its direct, utilitarian design.",
-  "image": "images/digital_alarm_clock.png"
+  "encoding_notes": "This encoding captures the digital alarm clock as a physical, standalone device that fulfills timekeeping and alert functions. Its traits are concentrated in the physical and functional layers, with modest abstraction (rule-based and temporal) and socially relevant visibility. Social constructs and symbolic communication are excluded due to its direct, utilitarian design."
 }
 
 ,
 {
   "entity": "Mechanical Clock",
   "uht_code": "DEF42205",
-  "image_url": "/validation_set/images/mechanical_clock.png",
+  "image_url": "/assets/entities/mechanical_clock.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -1691,15 +1668,14 @@
     "Context-sensitive": "Excluded â€” Displays absolute time, not contextually altered.",
     "Widely known": "Included â€” Clocks are globally recognized and ubiquitous."
   },
-  "encoding_notes": "This encoding reflects the mechanical clock as a traditional timekeeping apparatus, emphasizing its engineered structure, functional logic, and universal recognizability. Abstract traits are limited to its time-based logic, while social traits are included only when visually and culturally universal. It excludes interaction and autonomy due to its passive user interface and reliance on manual winding.",
-  "image": "images/mechanical_clock.png"
+  "encoding_notes": "This encoding reflects the mechanical clock as a traditional timekeeping apparatus, emphasizing its engineered structure, functional logic, and universal recognizability. Abstract traits are limited to its time-based logic, while social traits are included only when visually and culturally universal. It excludes interaction and autonomy due to its passive user interface and reliance on manual winding."
 }
 
 ,
 {
   "entity": "Pacemaker",
   "uht_code": "FAF72231",
-  "image_url": "/validation_set/images/pacemaker.png",
+  "image_url": "/assets/entities/pacemaker.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -1762,15 +1738,14 @@
     "Context-sensitive": "Excluded â€” Behavior is physiological, not socially contextual.",
     "Widely known": "Included â€” Broadly recognized across medical, technical, and public domains."
   },
-  "encoding_notes": "Encoding reflects the pacemaker as a critical biomedical cybernetic system that emulates natural cardiac rhythm via embedded logic. It is governed, widely recognized, and role-defining for its bearer. Excluded traits are ruled out due to lack of symbolic, communicative, or contextual abstraction functions. The hex code 'FAF72231' preserves alignment with the previously vetted encoding and upholds the minimal-yet-sufficient trait standard.",
-  "image": "images/pacemaker.png"
+  "encoding_notes": "Encoding reflects the pacemaker as a critical biomedical cybernetic system that emulates natural cardiac rhythm via embedded logic. It is governed, widely recognized, and role-defining for its bearer. Excluded traits are ruled out due to lack of symbolic, communicative, or contextual abstraction functions. The hex code 'FAF72231' preserves alignment with the previously vetted encoding and upholds the minimal-yet-sufficient trait standard."
 }
 
 ,
 {
   "entity": "Robotic Arm",
   "uht_code": "FEFE2005",
-  "image_url": "/validation_set/images/robotic_arm.png",
+  "image_url": "/assets/entities/robotic_arm.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -1835,15 +1810,14 @@
     "Context-sensitive": "Excluded â€” Maintains identity across contexts.",
     "Widely known": "Included â€” Widely recognized as a component of robotics and automation."
   },
-  "encoding_notes": "This encoding treats the robotic arm as a programmable, articulated mechanical agent within a functional and physical system. It is bio-inspired and interacts with humans in various domains but is not socially constructed or symbolically expressive. High representation in physical and functional layers reflects its engineered form and behavior.",
-  "image": "images/robotic_arm.png"
+  "encoding_notes": "This encoding treats the robotic arm as a programmable, articulated mechanical agent within a functional and physical system. It is bio-inspired and interacts with humans in various domains but is not socially constructed or symbolically expressive. High representation in physical and functional layers reflects its engineered form and behavior."
 }
 
 ,
 {
   "entity": "Smart Thermometer",
   "uht_code": "EEFC2205",
-  "image_url": "/validation_set/images/smart_thermometer.png",
+  "image_url": "/assets/entities/smart_thermometer.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -1907,15 +1881,14 @@
     "Context-sensitive": "Excluded â€” Measurement behavior remains stable across settings.",
     "Widely known": "Included â€” Common in healthcare, parenting, and smart home contexts."
   },
-  "encoding_notes": "This encoding reflects a smart thermometer as a biologically contextual, digitally enabled tool that senses, interprets, and communicates temperature. Physical and functional layers dominate due to its engineered and interactive role, while abstraction is limited to logic and temporality. Social traits are limited to visibility and general public familiarity.",
-  "image": "images/smart_thermometer.png"
+  "encoding_notes": "This encoding reflects a smart thermometer as a biologically contextual, digitally enabled tool that senses, interprets, and communicates temperature. Physical and functional layers dominate due to its engineered and interactive role, while abstraction is limited to logic and temporality. Social traits are limited to visibility and general public familiarity."
 }
 
 ,
 {
   "entity": "Smoke Detector",
   "uht_code": "DEF72215",
-  "image_url": "/validation_set/images/smoke_detector.png",
+  "image_url": "/assets/entities/smoke_detector.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -1981,15 +1954,14 @@
     "Context-sensitive": "Excluded â€” Operates the same across environments.",
     "Widely known": "Included â€” Universally recognized life safety device."
   },
-  "encoding_notes": "This encoding reflects a smoke detector as a structurally fixed, perceptible, and autonomous safety device. It is defined by logical sensing and regulatory inclusion. Though not user-interactive or symbolic, its system-critical function and legal mandate justify inclusion of autonomy and governance traits.",
-  "image": "images/smoke_detector.png"
+  "encoding_notes": "This encoding reflects a smoke detector as a structurally fixed, perceptible, and autonomous safety device. It is defined by logical sensing and regulatory inclusion. Though not user-interactive or symbolic, its system-critical function and legal mandate justify inclusion of autonomy and governance traits."
 }
 
 ,
 {
   "entity": "Solar Charger",
   "uht_code": "DED60205",
-  "image_url": "/validation_set/images/solar_charger.png",
+  "image_url": "/assets/entities/solar_charger.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -2051,15 +2023,14 @@
     "Context-sensitive": "Excluded â€” Function doesnâ€™t vary semantically with setting.",
     "Widely known": "Included â€” Recognized globally as a sustainable energy solution."
   },
-  "encoding_notes": "This encoding treats the solar charger as a physical, autonomous energy transformation device with a time-dependent function and broad public familiarity. Logical, symbolic, or socially defined traits are excluded, reflecting the charger's grounded, passive-operating design.",
-  "image": "images/solar_charger.png"
+  "encoding_notes": "This encoding treats the solar charger as a physical, autonomous energy transformation device with a time-dependent function and broad public familiarity. Logical, symbolic, or socially defined traits are excluded, reflecting the charger's grounded, passive-operating design."
 }
 
 ,
 {
   "entity": "Thermostat",
   "uht_code": "DEFC2000",
-  "image_url": "/validation_set/images/thermostat.png",
+  "image_url": "/assets/entities/thermostat.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -2119,15 +2090,14 @@
     "Context-sensitive": "Excluded â€” Its operation changes with context, but the object remains semantically stable.",
     "Widely known": "Excluded â€” Commonplace, but not included unless widespread recognition is core to identity."
   },
-  "encoding_notes": "This encoding captures the thermostat as a standard environmental control device. It emphasizes its engineered form, rule-based logic, and role in functional systems. Social and abstract traits are excluded unless directly integral to its design or conceptual identity. Autonomous and critical roles are omitted due to reliance on preset input and replaceability in many systems.",
-  "image": "images/thermostat.png"
+  "encoding_notes": "This encoding captures the thermostat as a standard environmental control device. It emphasizes its engineered form, rule-based logic, and role in functional systems. Social and abstract traits are excluded unless directly integral to its design or conceptual identity. Autonomous and critical roles are omitted due to reliance on preset input and replaceability in many systems."
 }
 
 ,
 {
   "entity": "Water Filtration Unit",
   "uht_code": "DFD60205",
-  "image_url": "/validation_set/images/water_filtration_unit.png",
+  "image_url": "/assets/entities/water_filtration_unit.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -2190,15 +2160,14 @@
     "Context-sensitive": "Excluded â€” Identity and behavior remain stable across different uses.",
     "Widely known": "Included â€” Commonly recognized and used in domestic and public contexts."
   },
-  "encoding_notes": "This encoding treats the water filtration unit as a structurally fixed, passive physical mechanism with autonomous function and no symbolic or computational capacity. It includes time-dependence and broad recognizability while excluding overextensions into abstract or interactive domains.",
-  "image": "images/water_filtration_unit.png"
+  "encoding_notes": "This encoding treats the water filtration unit as a structurally fixed, passive physical mechanism with autonomous function and no symbolic or computational capacity. It includes time-dependence and broad recognizability while excluding overextensions into abstract or interactive domains."
 }
 
 ,
 {
   "entity": "Wind Turbine",
   "uht_code": "DEF62205",
-  "image_url": "/validation_set/images/wind_turbine.png",
+  "image_url": "/assets/entities/wind_turbine.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -2262,15 +2231,14 @@
     "Context-sensitive": "Excluded â€” Performs the same functional role across contexts.",
     "Widely known": "Included â€” A globally familiar renewable energy technology."
   },
-  "encoding_notes": "This encoding treats the wind turbine as an industrial energy-generation mechanism. It emphasizes its engineered material form, functional automation, and logical control systems. While perceptible and visible, social traits are limited to public familiarity rather than culturally constructed meaning. Abstract traits reflect internal control logic and time-based operation, without symbolic or communicative intention.",
-  "image": "images/wind_turbine.png"
+  "encoding_notes": "This encoding treats the wind turbine as an industrial energy-generation mechanism. It emphasizes its engineered material form, functional automation, and logical control systems. While perceptible and visible, social traits are limited to public familiarity rather than culturally constructed meaning. Abstract traits reflect internal control logic and time-based operation, without symbolic or communicative intention."
 }
 
 ,
 {
   "entity": "Arrowhead (Stone Age)",
   "uht_code": "DF8C02C9",
-  "image_url": "/validation_set/images/arrowhead_stone_age.png",
+  "image_url": "/assets/entities/arrowhead_stone_age.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -2333,15 +2301,14 @@
     "Context-sensitive": "Excluded â€” Its identity and purpose are relatively stable regardless of context.",
     "Widely known": "Included â€” Recognized globally as a cultural and historical artifact."
   },
-  "encoding_notes": "This encoding frames the arrowhead as a purposeful, prehistoric technological artifact â€” one designed by humans, embedded in cultural practices, and preserved in historical time. Abstract and symbolic traits are excluded unless directly embedded in the objectâ€™s structure or function. Social traits are carefully selected to reflect group-level crafting knowledge and recognition without overextending into metaphor.",
-  "image": "images/arrowhead_stone_age.png"
+  "encoding_notes": "This encoding frames the arrowhead as a purposeful, prehistoric technological artifact â€” one designed by humans, embedded in cultural practices, and preserved in historical time. Abstract and symbolic traits are excluded unless directly embedded in the objectâ€™s structure or function. Social traits are carefully selected to reflect group-level crafting knowledge and recognition without overextending into metaphor."
 }
 
 ,
 {
   "entity": "Bone Conduction Headset",
   "uht_code": "FEEC40CD",
-  "image_url": "/validation_set/images/bone_conduction_headset.png",
+  "image_url": "/assets/entities/bone_conduction_headset.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -2407,15 +2374,14 @@
     "Context-sensitive": "Excluded â€” Usage is relatively stable across environments.",
     "Widely known": "Included â€” Commonly recognized as a distinct class of consumer audio hardware."
   },
-  "encoding_notes": "This encoding captures the bone conduction headset as a biologically inspired, socially embedded, and functionally communicative consumer device. Passive and regulated traits are excluded based on the standard that only traits intrinsic to the object itself, not context or external governance, are included. The correction from `02` to `40` in the Abstract layer reflects accurate placement of the 'Communicative' trait.",
-  "image": "images/bone_conduction_headset.png"
+  "encoding_notes": "This encoding captures the bone conduction headset as a biologically inspired, socially embedded, and functionally communicative consumer device. Passive and regulated traits are excluded based on the standard that only traits intrinsic to the object itself, not context or external governance, are included. The correction from `02` to `40` in the Abstract layer reflects accurate placement of the 'Communicative' trait."
 }
 
 ,
 {
   "entity": "Circuit Board",
   "uht_code": "DEE40002",
-  "image_url": "/validation_set/images/circuit_board.png",
+  "image_url": "/assets/entities/circuit_board.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -2473,15 +2439,14 @@
     "Context-sensitive": "Included â€” Meaning and function vary depending on system context.",
     "Widely known": "Excluded â€” Known to specialists, not widely recognized by the general public."
   },
-  "encoding_notes": "This encoding treats a circuit board as a general-purpose hardware substrate, distinct from higher-order symbolic or interactive systems. Only traits that are structurally and functionally inherent to the board itself are included. State transformation, symbolism, and social significance are excluded unless intrinsic to the boardâ€™s identity.",
-  "image": "images/circuit_board.png"
+  "encoding_notes": "This encoding treats a circuit board as a general-purpose hardware substrate, distinct from higher-order symbolic or interactive systems. Only traits that are structurally and functionally inherent to the board itself are included. State transformation, symbolism, and social significance are excluded unless intrinsic to the boardâ€™s identity."
 }
 
 ,
 {
   "entity": "Coral Reef Fragment",
   "uht_code": "BF04000D",
-  "image_url": "/validation_set/images/coral_reef_fragment.png",
+  "image_url": "/assets/entities/coral_reef_fragment.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -2535,15 +2500,14 @@
     "Visible": "Included â€” Visually striking and identifiable.",
     "Context-sensitive": "Excluded â€” Function and meaning remain stable.",
     "Widely known": "Included â€” Recognized globally, especially in environmental contexts."
-  },
-  "image": "images/coral_reef_fragment.png"
+  }
 }
 
 ,
 {
   "entity": "Dust Particle",
   "uht_code": "83000000",
-  "image_url": "/validation_set/images/dust_particle.png",
+  "image_url": "/assets/entities/dust_particle.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -2591,15 +2555,14 @@
     "Context-sensitive": "Excluded â€” Exists independently of specific contextual frames.",
     "Widely known": "Excluded â€” Dust as a category is known, but an individual particle is not culturally salient."
   },
-  "encoding_notes": "This encoding describes a generic, isolated dust particle, not a symbolic aggregate like 'dust' in literature or 'pollution' in policy. Perceptibility and social traits are excluded due to scale and lack of cultural framing. Passive is now correctly included, as a dust particle exhibits no agency or internal behavior.",
-  "image": "images/dust_particle.png"
+  "encoding_notes": "This encoding describes a generic, isolated dust particle, not a symbolic aggregate like 'dust' in literature or 'pollution' in policy. Perceptibility and social traits are excluded due to scale and lack of cultural framing. Passive is now correctly included, as a dust particle exhibits no agency or internal behavior."
 }
 
 ,
 {
   "entity": "Fossil",
   "uht_code": "BF000201",
-  "image_url": "/validation_set/images/fossil.png",
+  "image_url": "/assets/entities/fossil.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -2655,15 +2618,14 @@
     "Context-sensitive": "Excluded â€” Meaning is fairly stable regardless of setting.",
     "Widely known": "Included â€” Fossils are globally recognized and commonly understood objects."
   },
-  "encoding_notes": "This encoding frames the fossil as a naturally formed physical remnant of past biological life. While it has educational and scientific significance, only intrinsic traits â€” not attributed meanings â€” are included. Temporal relevance is marked due to its preserved, ancient identity.",
-  "image": "images/fossil.png"
+  "encoding_notes": "This encoding frames the fossil as a naturally formed physical remnant of past biological life. While it has educational and scientific significance, only intrinsic traits â€” not attributed meanings â€” are included. Temporal relevance is marked due to its preserved, ancient identity."
 }
 
 ,
 {
   "entity": "Glass Bottle",
   "uht_code": "DF880001",
-  "image_url": "/validation_set/images/glass_bottle.png",
+  "image_url": "/assets/entities/glass_bottle.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -2720,15 +2682,14 @@
     "Context-sensitive": "Excluded â€” Function is generally stable across contexts.",
     "Widely known": "Included â€” Commonly recognized and understood across cultures."
   },
-  "encoding_notes": "This encoding treats the glass bottle as a general-purpose physical container. Traits are limited to intrinsic structural and functional aspects. No symbolic, logical, or institutional roles are inferred, keeping the representation minimal and precise.",
-  "image": "images/glass_bottle.png"
+  "encoding_notes": "This encoding treats the glass bottle as a general-purpose physical container. Traits are limited to intrinsic structural and functional aspects. No symbolic, logical, or institutional roles are inferred, keeping the representation minimal and precise."
 }
 
 ,
 {
   "entity": "Human Femur",
   "uht_code": "9F000201",
-  "image_url": "/validation_set/images/human_femur.png",
+  "image_url": "/assets/entities/human_femur.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -2786,7 +2747,7 @@
 {
   "entity": "Lava Flow",
   "uht_code": "865A2207",
-  "image_url": "/validation_set/images/lava_flow.png",
+  "image_url": "/assets/entities/lava_flow.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -2849,7 +2810,7 @@
 {
   "entity": "Magnet",
   "uht_code": "D6CE200D",
-  "image_url": "/validation_set/images/magnet.png",
+  "image_url": "/assets/entities/magnet.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -2914,7 +2875,7 @@
 {
   "entity": "Mars Rock Sample",
   "uht_code": "87000000",
-  "image_url": "/validation_set/images/mars_rock_sample.png",
+  "image_url": "/assets/entities/mars_rock_sample.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -2970,7 +2931,7 @@
 {
   "entity": "Paperclip",
   "uht_code": "D78800C5",
-  "image_url": "/validation_set/images/paperclip.png",
+  "image_url": "/assets/entities/paperclip.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -3032,7 +2993,7 @@
 {
   "entity": "Quartz Crystal",
   "uht_code": "9F002203",
-  "image_url": "/validation_set/images/quartz_crystal.png",
+  "image_url": "/assets/entities/quartz_crystal.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -3092,7 +3053,7 @@
 {
   "entity": "Sandbag",
   "uht_code": "D3000000",
-  "image_url": "/validation_set/images/sandbag.png",
+  "image_url": "/assets/entities/sandbag.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -3149,7 +3110,7 @@
 {
   "entity": "Snowflake",
   "uht_code": "9F000001",
-  "image_url": "/validation_set/images/snowflake.png",
+  "image_url": "/assets/entities/snowflake.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -3209,7 +3170,7 @@
 {
   "entity": "Tungsten Filament",
   "uht_code": "DEC40045",
-  "image_url": "/validation_set/images/tungsten_filament.png",
+  "image_url": "/assets/entities/tungsten_filament.png",
   "traits": {
     "physical": [
       "Physical object",
@@ -3275,7 +3236,7 @@
 {
   "entity": "Academic Citation",
   "uht_code": "0084C1FF",
-  "image_url": "/validation_set/images/academic_citation.png",
+  "image_url": "/assets/entities/academic_citation.png",
   "traits": {
     "physical": [],
     "functional": [
@@ -3342,7 +3303,7 @@
 {
   "entity": "Birth Certificate",
   "uht_code": "0084C1FF",
-  "image_url": "/validation_set/images/birth_certificate.png",
+  "image_url": "/assets/entities/birth_certificate.png",
   "traits": {
     "physical": [],
     "functional": [
@@ -3409,7 +3370,7 @@
 {
   "entity": "Copyright Law",
   "uht_code": "0000F9FF",
-  "image_url": "/validation_set/images/copyright_law.png",
+  "image_url": "/assets/entities/copyright_law.png",
   "traits": {
     "physical": [],
     "functional": [],
@@ -3476,7 +3437,7 @@
 {
   "entity": "Corporate Org Chart",
   "uht_code": "0084B0FF",
-  "image_url": "/validation_set/images/corporate_org_chart.png",
+  "image_url": "/assets/entities/corporate_org_chart.png",
   "traits": {
     "physical": [],
     "functional": [
@@ -3543,7 +3504,7 @@
 {
   "entity": "Cultural Taboo",
   "uht_code": "000089FF",
-  "image_url": "/validation_set/images/cultural_taboo.png",
+  "image_url": "/assets/entities/cultural_taboo.png",
   "traits": {
     "physical": [],
     "functional": [],
@@ -3607,7 +3568,7 @@
 {
   "entity": "Employment Contract",
   "uht_code": "0084A9FF",
-  "image_url": "/validation_set/images/employment_contract.png",
+  "image_url": "/assets/entities/employment_contract.png",
   "traits": {
     "physical": [],
     "functional": [
@@ -3675,7 +3636,7 @@
 {
   "entity": "Gender Pronoun Usage",
   "uht_code": "0084C9FF",
-  "image_url": "/validation_set/images/gender_pronoun_usage.png",
+  "image_url": "/assets/entities/gender_pronoun_usage.png",
   "traits": {
     "physical": [],
     "functional": [
@@ -3743,7 +3704,7 @@
 {
   "entity": "Military Salute",
   "uht_code": "0084C8FF",
-  "image_url": "/validation_set/images/military_salute.png",
+  "image_url": "/assets/entities/military_salute.png",
   "traits": {
     "physical": [],
     "functional": [
@@ -3810,7 +3771,7 @@
 {
   "entity": "National Anthem",
   "uht_code": "0080C9FF",
-  "image_url": "/validation_set/images/national_anthem.png",
+  "image_url": "/assets/entities/national_anthem.png",
   "traits": {
     "physical": [],
     "functional": [
@@ -3874,7 +3835,7 @@
 {
   "entity": "Passport",
   "uht_code": "40DCF9FF",
-  "image_url": "/validation_set/images/passport.png",
+  "image_url": "/assets/entities/passport.png",
   "traits": {
     "physical": [
       "Man-made / synthetic"
@@ -3949,7 +3910,7 @@
 {
   "entity": "Protest March",
   "uht_code": "008009FF",
-  "image_url": "/validation_set/images/protest_march.png",
+  "image_url": "/assets/entities/protest_march.png",
   "traits": {
     "physical": [],
     "functional": [
@@ -4014,7 +3975,7 @@
 {
   "entity": "Religious Holiday",
   "uht_code": "00848AFF",
-  "image_url": "/validation_set/images/religious_holiday.png",
+  "image_url": "/assets/entities/religious_holiday.png",
   "traits": {
     "physical": [],
     "functional": [
@@ -4081,7 +4042,7 @@
 {
   "entity": "Tenure System",
   "uht_code": "00848DFF",
-  "image_url": "/validation_set/images/tenure_system.png",
+  "image_url": "/assets/entities/tenure_system.png",
   "traits": {
     "physical": [],
     "functional": [
@@ -4149,7 +4110,7 @@
 {
   "entity": "Twitter Handle",
   "uht_code": "00C4C1FF",
-  "image_url": "/validation_set/images/twitter_handle.png", 
+  "image_url": "/assets/entities/twitter_handle.png", 
   "traits": {
     "physical": [],
     "functional": [
@@ -4217,7 +4178,7 @@
 {
   "entity": "University Degree",
   "uht_code": "0080C0E9",
-  "image_url": "/validation_set/images/university_degree.png",
+  "image_url": "/assets/entities/university_degree.png",
   "traits": {
     "physical": [],
     "functional": [
@@ -4279,7 +4240,7 @@
 {
   "entity": "Wedding Vow",
   "uht_code": "0080C8FF",
-  "image_url": "/validation_set/images/wedding_vow.png",
+  "image_url": "/assets/entities/wedding_vow.png",
   "traits": {
     "physical": [],
     "functional": [
