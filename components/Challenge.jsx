@@ -121,7 +121,7 @@ export default function Challenge() {
         <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <div style={{ maxHeight: '16rem', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.5rem', borderRadius: '0.5rem', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' }}>
             <img
-              src={challengeEntity.image_url}
+              src={`${import.meta.env.BASE_URL}${challengeEntity.image_url.replace(/^\//, '')}`}
               alt={challengeEntity.name}
               style={{ maxHeight: '16rem', width: 'auto', objectFit: 'contain' }}
               loading="lazy"
